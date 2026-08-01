@@ -218,7 +218,9 @@
             <control-input control="THROTTLE" axis="/controls/engines/engine[1]/reverser" src0="0" src1="1" dst0="0" dst1="1"/>
   </thruster>
 
-  <!-- Roue du nez -->
+  <!-- LANDING GEAR -->
+
+  <!-- Nose Wheel -->
   <gear x=" 6.694" y=" 0.0000" z="-1.8063"
         compression = "0.15"
         spring      = "0.6"
@@ -231,7 +233,7 @@
         <control-speed  control="EXTEND" transition-time="6"/>
   </gear>
 
-  <!-- Roue gauche -->
+  <!-- Left Wheel -->
   <gear x=" 1.827" y=" 1.4263" z="-1.8063"
         compression = "0.10"
         spring      = "0.6"
@@ -245,7 +247,7 @@
         <control-speed  control="EXTEND" transition-time="7"/>
   </gear>
 
-  <!-- Roue droite -->
+  <!-- Right Wheel -->
   <gear x=" 1.827" y="-1.4263" z="-1.8063"
         compression = "0.10"
         spring      = "0.6"
@@ -259,9 +261,8 @@
         <control-speed  control="EXTEND" transition-time="7.5"/>
   </gear>
 
-  <!-- 346.3 gal us = 2078 lb -->
+  <!-- Fuel Tanks -->
   <tank x="2.33" y=" 2.3" z="-0.921" capacity="3500"/>
-  <!-- 346.3 gal us = 2078 lb -->
   <tank x="2.33" y="-2.3" z="-0.921" capacity="3500"/>
 
   <!-- Mass distribution
