@@ -1,4 +1,4 @@
-# Akinci
+# Bayraktar Akinci
 Baykar Bayraktar Akinci for FlightGear
 
 The Baykar Bayraktar Akinci is a High Altitude Long Endurance (HALE) Unmanned Combat Aerial Vehicle (UCAV) developed by Baykar Technologies. Designed for intelligence, surveillance, reconnaissance, precision strike, maritime patrol, and air-to-air missions, the AKINCI entered operational service in 2021. Thanks to its high payload capacity and advanced avionics, it can employ a wide range of guided munitions, stand-off weapons, air-to-air missiles, and reconnaissance payloads.
