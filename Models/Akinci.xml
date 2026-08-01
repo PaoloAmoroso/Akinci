@@ -1,0 +1,1454 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <path>Akinci.ac</path>
+
+  <!-- MP sound call -->
+  <sound>
+    <path>Aircraft/Akinci/Sounds/mp-sound.xml</path>
+  </sound>
+
+  <nasal>
+    <load>
+      var livery_update = aircraft.livery_update.new("Aircraft/Akinci/Models/Liveries", 10);
+    </load>
+    <unload>
+      livery_update.stop();
+    </unload>
+  </nasal>
+
+  <animation>
+    <!-- Objets opaques -->
+
+    <object-name>Fuselage</object-name>
+    <object-name>GearNDoorL</object-name>
+    <object-name>GearNDoorR</object-name>
+    <object-name>Interiors</object-name>
+    <object-name>Pitot</object-name>
+    <object-name>Antennas</object-name>
+    <object-name>C-Band</object-name>
+    <object-name>Cameras</object-name>
+    <object-name>FLIRBase</object-name>
+    <object-name>FLIRHead</object-name>
+    <object-name>REDET</object-name>
+    <object-name>HEDET</object-name>
+    <object-name>Pylon_C1</object-name>
+    <object-name>Pylons_W1</object-name>
+    <object-name>Pylons_W2-1</object-name>
+    <object-name>Pylons_W2-3</object-name>
+    <object-name>Pylons_W2-3</object-name>
+
+    <object-name>Wing_1</object-name>
+    <object-name>Wing_2</object-name>
+    <object-name>AileronL</object-name>
+    <object-name>AileronR</object-name>
+    <object-name>FlapL</object-name>
+    <object-name>FlapR</object-name>
+    <object-name>StabH</object-name>
+    <object-name>ElevatorL</object-name>
+    <object-name>ElevatorR</object-name>
+    <object-name>StabV</object-name>
+    <object-name>Rudder</object-name>
+    <object-name>Fairings</object-name>
+
+    <object-name>Nacelle</object-name>
+    <object-name>OgivaL</object-name>
+    <object-name>OgivaR</object-name>
+    <object-name>PropL</object-name>
+    <object-name>PropR</object-name>
+    <object-name>Exaust</object-name>
+
+    <object-name>MainGearL</object-name>
+    <object-name>MainGearR</object-name>
+    <object-name>WheelL</object-name>
+    <object-name>WheelR</object-name>
+    <object-name>MainGearL</object-name>
+    <object-name>Strut1N</object-name>
+    <object-name>Strut2N</object-name>
+    <object-name>Scissor1N</object-name>
+    <object-name>Scissor2N</object-name>
+    <object-name>JawN</object-name>
+    <object-name>WheelN</object-name>
+
+    <!-- Objets transparents -->
+    <object-name>FLIRGlass</object-name>
+    
+    <!-- HDR mode -->
+    <object-name>FLIRGlassHDR</object-name>
+
+  </animation>
+
+  <animation>
+    <type>material</type>
+
+    <object-name>Fuselage</object-name>
+    <object-name>GearNDoorL</object-name>
+    <object-name>GearNDoorR</object-name>
+    <object-name>Interiors</object-name>
+    <object-name>Pitot</object-name>
+    <object-name>Antennas</object-name>
+    <object-name>C-Band</object-name>
+    <object-name>Cameras</object-name>
+    <object-name>FLIRBase</object-name>
+    <object-name>FLIRHead</object-name>
+    <object-name>REDET</object-name>
+    <object-name>HEDET</object-name>
+    <object-name>Pylon_C1</object-name>
+    <object-name>Pylons_W1</object-name>
+    <object-name>Pylons_W2-1</object-name>
+    <object-name>Pylons_W2-3</object-name>
+    <object-name>Pylons_W2-3</object-name>
+
+    <object-name>Wing_1</object-name>
+    <object-name>Wing_2</object-name>
+    <object-name>AileronL</object-name>
+    <object-name>AileronR</object-name>
+    <object-name>FlapL</object-name>
+    <object-name>FlapR</object-name>
+    <object-name>StabH</object-name>
+    <object-name>ElevatorL</object-name>
+    <object-name>ElevatorR</object-name>
+    <object-name>StabV</object-name>
+    <object-name>Rudder</object-name>
+    <object-name>Fairings</object-name>
+
+    <object-name>Nacelle</object-name>
+    <object-name>OgivaL</object-name>
+    <object-name>OgivaR</object-name>
+    <object-name>PropL</object-name>
+    <object-name>PropR</object-name>
+    <object-name>Exaust</object-name>
+
+    <object-name>MainGearL</object-name>
+    <object-name>MainGearR</object-name>
+    <object-name>WheelL</object-name>
+    <object-name>WheelR</object-name>
+    <object-name>MainGearL</object-name>
+    <object-name>Strut1N</object-name>
+    <object-name>Strut2N</object-name>
+    <object-name>Scissor1N</object-name>
+    <object-name>Scissor2N</object-name>
+    <object-name>JawN</object-name>
+    <object-name>WheelN</object-name>
+
+    <object-name>FLIRGlass</object-name>
+    <object-name>FLIRGlassHDR</object-name>
+
+    <property-base>sim/model/livery</property-base>
+    <texture-prop>texture</texture-prop>
+    <texture>texture.png</texture>
+    <specular>
+      <red-prop>specular/red</red-prop>
+      <green-prop>specular/green</green-prop>
+      <blue-prop>specular/blue</blue-prop>
+    </specular>
+  </animation>
+
+  <!-- working for Compositor -->
+  <effect>
+    <inherits-from>Effects/Glass/glassrain</inherits-from>
+    <object-name>FLIRGlass</object-name>
+  </effect>
+
+  <effect>
+    <inherits-from>Effects/Glass/glass</inherits-from>
+    <object-name>FLIRGlassHDR</object-name>
+  </effect>
+
+  <!-- HDR Glass Selection -->
+  <animation>
+    <type>select</type>
+    <condition>
+      <!-- <property>sim/rendering/hdr/hdr-enabled</property> -->
+      <property>sim/multiplay/generic/bool[2]</property>
+    </condition>
+    <object-name>FLIRGlassHDR</object-name>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <condition>
+      <!-- <not><property>sim/rendering/hdr/hdr-enabled</property></not> -->
+      <not><property>sim/multiplay/generic/bool[2]</property></not>
+    </condition>
+    <object-name>FLIRGlass</object-name>
+  </animation>
+
+  <effect>
+    <inherits-from>Effects/model-transparent</inherits-from>
+    <object-name>propdiscL</object-name>
+    <object-name>propblurL</object-name>
+    <object-name>propdiscR</object-name>
+    <object-name>propblurR</object-name>
+  </effect>
+
+  <model>
+    <path>Effects/cranking/all-crankings.xml</path>
+  </model>
+
+  <model>
+    <path>Effects/trail/all-trails.xml</path>
+  </model>
+
+  <model>
+    <path>Effects/tiptrail/all-tiptrails.xml</path>
+  </model>
+
+  <model>
+    <path>Effects/ground/all-ground.xml</path>
+  </model>
+<!--
+  <model>
+    <path>light/all-lights.xml</path>
+  </model>
+-->
+  <!-- ENGINES -->
+
+  <!-- Left Engine -->
+
+  <!-- RPM Prop Effects -->
+  <animation>
+    <type>select</type>
+    <object-name>propdiscL</object-name>
+    <condition>
+      <greater-than>
+        <property>engines/engine[0]/rpm</property>
+        <value>900</value>
+      </greater-than>
+    </condition>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>propblurL</object-name>
+    <condition>
+    <and>
+      <greater-than>
+        <property>engines/engine[0]/rpm</property>
+        <value>300.000</value>
+      </greater-than>
+      <less-than>
+        <property>engines/engine[0]/rpm</property>
+        <value>900.001</value>
+      </less-than>
+    </and>
+    </condition>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>PropL</object-name>
+    <condition>
+      <less-than>
+        <property>engines/engine[0]/rpm</property>
+        <value>900</value>
+      </less-than>
+    </condition>
+  </animation>
+
+  <animation>
+    <type>spin</type>
+    <object-name>PropL</object-name>
+    <object-name>OgivaL</object-name>
+    <object-name>propdiscL</object-name>
+    <object-name>propblurL</object-name>
+    <condition>
+      <!-- <not><property>controls/engines/engine[0]/cutoff</property></not> -->
+      <not><property>sim/multiplay/generic/bool[6]</property></not>
+    </condition>
+    <property>engines/engine[0]/n1</property>
+    <factor> 5 </factor>
+    <center>
+      <x-m> -3.565600 </x-m>
+      <y-m> -2.319800 </y-m>
+      <z-m>  0.058775 </z-m>
+    </center>
+    <axis>
+      <x> -1 </x>
+      <y>  0 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+
+  <!-- Right Engine -->
+
+  <!-- RPM Prop Effects -->
+  <animation>
+    <type>select</type>
+    <object-name>propdiscR</object-name>
+    <condition>
+      <greater-than>
+        <property>engines/engine[1]/rpm</property>
+        <value>900</value>
+      </greater-than>
+    </condition>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>propblurR</object-name>
+    <condition>
+    <and>
+      <greater-than>
+        <property>engines/engine[1]/rpm</property>
+        <value>300.000</value>
+      </greater-than>
+      <less-than>
+        <property>engines/engine[1]/rpm</property>
+        <value>900.001</value>
+      </less-than>
+    </and>
+    </condition>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>PropR</object-name>
+    <condition>
+      <less-than>
+        <property>engines/engine[1]/rpm</property>
+        <value>900</value>
+      </less-than>
+    </condition>
+  </animation>
+
+  <animation>
+    <type>spin</type>
+    <object-name>PropR</object-name>
+    <object-name>OgivaR</object-name>
+    <object-name>propdiscR</object-name>
+    <object-name>propblurR</object-name>
+    <condition>
+      <!-- <not><property>controls/engines/engine[1]/cutoff</property></not> -->
+      <not><property>sim/multiplay/generic/bool[7]</property></not>
+    </condition>
+    <property>engines/engine[1]/n1</property>
+    <factor> 5 </factor>
+    <center>
+      <x-m> -3.565600 </x-m>
+      <y-m>  2.319800 </y-m>
+      <z-m>  0.058775 </z-m>
+    </center>
+    <axis>
+      <x> -1 </x>
+      <y>  0 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+
+  <!-- FLIGHT CONTROL SURFACES -->
+
+  <!-- Ailerons -->
+  <animation>
+    <type>rotate</type>
+    <object-name>AileronL</object-name>
+    <property>surface-positions/left-aileron-pos-norm</property>
+    <factor> 16 </factor>
+    <axis>
+      <x1-m> -0.65298 </x1-m>
+      <y1-m> -9.06140 </y1-m>
+      <z1-m>  0.17788 </z1-m>
+      <x2-m> -0.87544 </x2-m>
+      <y2-m> -6.34000 </y2-m>
+      <z2-m>  0.23162 </z2-m>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>AileronR</object-name>
+    <property>surface-positions/right-aileron-pos-norm</property>
+    <factor> 16 </factor>
+    <axis>
+      <x1-m> -0.87544 </x1-m>
+      <y1-m>  6.34000 </y1-m>
+      <z1-m>  0.23162 </z1-m>
+      <x2-m> -0.65298 </x2-m>
+      <y2-m>  9.06140 </y2-m>
+      <z2-m>  0.17788 </z2-m>
+    </axis>
+  </animation>
+
+  <!-- Elevators -->
+  <animation>
+    <type>rotate</type>
+    <object-name>ElevatorL</object-name>
+    <!-- <property>controls/flight/elevator</property> -->
+    <property>surface-positions/elevator-pos-norm</property>
+    <factor> -18 </factor>
+    <axis>
+      <x1-m>  5.35270 </x1-m>
+      <y1-m> -0.33826 </y1-m>
+      <z1-m>  0.05473 </z1-m>
+      <x2-m>  6.01620 </x2-m>
+      <y2-m> -2.63480 </y2-m>
+      <z2-m> -0.22663 </z2-m>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>ElevatorR</object-name>
+    <!-- <property>controls/flight/elevator</property> -->
+    <property>surface-positions/elevator-pos-norm</property>
+    <factor> -18 </factor>
+    <axis>
+      <x1-m>  6.01620 </x1-m>
+      <y1-m>  2.63480 </y1-m>
+      <z1-m> -0.22663 </z1-m>
+      <x2-m>  5.35270 </x2-m>
+      <y2-m>  0.33826 </y2-m>
+      <z2-m>  0.05473 </z2-m>
+    </axis>
+  </animation>
+
+  <!-- Rudder -->
+  <animation>
+    <type>rotate</type>
+    <object-name>Rudder</object-name>
+    <!-- <property>controls/flight/rudder</property> -->
+    <property>surface-positions/rudder-pos-norm</property>
+    <factor> 18 </factor>
+    <axis>
+      <x1-m> 5.9108 </x1-m>
+      <y1-m> 0.0000 </y1-m>
+      <z1-m> 2.5332 </z1-m>
+      <x2-m> 5.3189 </x2-m>
+      <y2-m> 0.0000 </y2-m>
+      <z2-m> 0.2941 </z2-m>
+    </axis>
+  </animation>
+
+  <!-- Flaps - INOP -->
+  <animation>
+    <type>translate</type>
+    <object-name>FlapL</object-name>
+    <object-name>FlapR</object-name>
+    <property>surface-positions/flap-pos-norm</property>
+    <factor> 0.05 </factor>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>FlapL</object-name>
+    <property>surface-positions/flap-pos-norm</property>
+    <factor> 35 </factor>
+    <axis>
+      <x1-m> -0.87544 </x1-m>
+      <y1-m> -6.34000 </y1-m>
+      <z1-m>  0.23162 </z1-m>
+      <x2-m> -1.15920 </x2-m>
+      <y2-m> -2.86830 </y2-m>
+      <z2-m>  0.30017 </z2-m>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>FlapR</object-name>
+    <property>surface-positions/flap-pos-norm</property>
+    <factor> 35 </factor>
+    <axis>
+      <x1-m> -1.15920 </x1-m>
+      <y1-m>  2.86830 </y1-m>
+      <z1-m>  0.30017 </z1-m>
+      <x2-m> -0.87544 </x2-m>
+      <y2-m>  6.34000 </y2-m>
+      <z2-m>  0.23162 </z2-m>
+    </axis>
+  </animation>
+
+  <!-- LANDING GEAR -->
+
+  <!-- Nose Gear Retraction -->
+  <animation>
+    <type>rotate</type>
+    <object-name>Strut1N</object-name>
+    <object-name>Strut2N</object-name>
+    <object-name>Scissor1N</object-name>
+    <object-name>Scissor2N</object-name>
+    <object-name>JawN</object-name>
+    <object-name>WheelN</object-name>
+    <property>gear/gear[0]/position-norm</property>
+    <interpolation>
+      <entry><ind> 0 </ind><dep> 95 </dep></entry>
+      <entry><ind> 1 </ind><dep>  0 </dep></entry>
+    </interpolation>
+    <center>
+      <x-m> -3.37190 </x-m>
+      <y-m>  0.00000 </y-m>
+      <z-m> -0.44171 </z-m>
+    </center>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+
+  <!-- Left Main Gear Retraction -->
+  <animation>
+    <type>translate</type>
+    <object-name>MainGearL</object-name>
+    <object-name>WheelL</object-name>
+    <property>gear/gear[1]/position-norm</property>
+    <interpolation>
+      <entry><ind> 0 </ind><dep> -0.4 </dep></entry>
+      <entry><ind> 1 </ind><dep>  0.0 </dep></entry>
+    </interpolation>
+    <center>
+      <x-m> -0.43682 </x-m>
+      <y-m> -0.44730 </y-m>
+      <z-m> -0.37193 </z-m>
+    </center>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>MainGearL</object-name>
+    <object-name>WheelL</object-name>
+    <property>gear/gear[1]/position-norm</property>
+    <factor> 96 </factor>
+    <offset-deg> -96 </offset-deg>
+    <center>
+      <x-m> -0.43682 </x-m>
+      <y-m> -0.44730 </y-m>
+      <z-m> -0.37193 </z-m>
+    </center>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>MainGearL</object-name>
+    <object-name>WheelL</object-name>
+    <property>gear/gear[1]/position-norm</property>
+    <factor> -44 </factor>
+    <offset-deg> 44 </offset-deg>
+    <center>
+      <x-m> -0.43682 </x-m>
+      <y-m> -0.44730 </y-m>
+      <z-m> -0.37193 </z-m>
+    </center>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+
+  <!-- Right Main Gear Retraction -->
+  <animation>
+    <type>translate</type>
+    <object-name>MainGearR</object-name>
+    <object-name>WheelR</object-name>
+    <property>gear/gear[2]/position-norm</property>
+    <interpolation>
+      <entry><ind> 0 </ind><dep> -0.4 </dep></entry>
+      <entry><ind> 1 </ind><dep>  0.0 </dep></entry>
+    </interpolation>
+    <center>
+      <x-m> -0.43682 </x-m>
+      <y-m>  0.44730 </y-m>
+      <z-m> -0.37193 </z-m>
+    </center>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>MainGearR</object-name>
+    <object-name>WheelR</object-name>
+    <property>gear/gear[2]/position-norm</property>
+    <factor> 96 </factor>
+    <offset-deg> -96 </offset-deg>
+    <center>
+      <x-m> -0.43682 </x-m>
+      <y-m>  0.44730 </y-m>
+      <z-m> -0.37193 </z-m>
+    </center>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>MainGearR</object-name>
+    <object-name>WheelR</object-name>
+    <property>gear/gear[2]/position-norm</property>
+    <factor>  44 </factor>
+    <offset-deg> -44 </offset-deg>
+    <center>
+      <x-m> -0.43682 </x-m>
+      <y-m>  0.44730 </y-m>
+      <z-m> -0.37193 </z-m>
+    </center>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+
+  <!-- NOSE GEAR RUDDER -->
+
+  <animation>
+    <type>rotate</type>
+    <object-name>JawN</object-name>
+    <object-name>WheelN</object-name>
+    <!-- <property>gear/gear[0]/caster-angle-deg</property> -->
+    <property>sim/multiplay/generic/float[15]</property>
+    <factor> -1 </factor>
+    <center>
+      <x-m> -3.8668 </x-m>
+      <y-m>  0.0000 </y-m>
+      <z-m> -1.4391 </z-m>
+    </center>
+    <axis>
+      <x> 0 </x>
+      <y> 0 </y>
+      <z> 1 </z>
+    </axis>
+  </animation>
+
+  <!-- WHEELS ROTATION -->
+  <animation>
+    <type>spin</type>
+    <object-name>WheelN</object-name>
+    <!-- <property>gear/gear[0]/rollspeed-ms</property> -->
+    <property>sim/multiplay/generic/float[12]</property>
+    <factor> 30 </factor>
+    <center>
+      <x-m> -3.7628 </x-m>
+      <y-m>  0.0000 </y-m>
+      <z-m> -1.6272 </z-m>
+    </center>
+    <axis>
+      <x>  0 </x>
+      <y> -1 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>spin</type>
+    <object-name>WheelL</object-name>
+    <!-- <property>gear/gear[1]/rollspeed-ms</property> -->
+    <property>sim/multiplay/generic/float[13]</property>
+    <factor> 30 </factor>
+    <center>
+      <x-m> -0.7282 </x-m>
+      <y-m> -1.4229 </y-m>
+      <z-m> -1.5766 </z-m>
+    </center>
+    <axis>
+      <x>  0 </x>
+      <y> -1 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>spin</type>
+    <object-name>WheelR</object-name>
+    <!-- <property>gear/gear[2]/rollspeed-ms</property> -->
+    <property>sim/multiplay/generic/float[14]</property>
+    <factor> 30 </factor>
+    <center>
+      <x-m> -0.7282 </x-m>
+      <y-m>  1.4229 </y-m>
+      <z-m> -1.5766 </z-m>
+    </center>
+    <axis>
+      <x>  0 </x>
+      <y> -1 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+
+  <!-- Compression - INOP -->
+
+  <!-- DOORS -->
+
+  <!-- Landing Gear Door -->
+  <animation>
+    <type>rotate</type>
+    <object-name>GearNDoorL</object-name>
+    <property>gear/gear[0]/position-norm</property>
+    <interpolation>
+      <entry><ind> 0.0 </ind><dep>   0 </dep></entry>
+      <entry><ind> 0.1 </ind><dep> -85 </dep></entry>
+      <entry><ind> 1.0 </ind><dep> -85 </dep></entry>
+    </interpolation>
+    <axis>
+      <x1-m> -4.71990 </x1-m>
+      <y1-m> -0.17227 </y1-m>
+      <z1-m> -0.73458 </z1-m>
+      <x2-m> -3.32600 </x2-m>
+      <y2-m> -0.23615 </y2-m>
+      <z2-m> -0.63036 </z2-m>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>GearNDoorR</object-name>
+    <property>gear/gear[0]/position-norm</property>
+    <interpolation>
+      <entry><ind> 0.0 </ind><dep>  0 </dep></entry>
+      <entry><ind> 0.1 </ind><dep> 85 </dep></entry>
+      <entry><ind> 1.0 </ind><dep> 85 </dep></entry>
+    </interpolation>
+    <axis>
+      <x1-m> -4.71990 </x1-m>
+      <y1-m>  0.17227 </y1-m>
+      <z1-m> -0.73458 </z1-m>
+      <x2-m> -3.32600 </x2-m>
+      <y2-m>  0.23615 </y2-m>
+      <z2-m> -0.63036 </z2-m>
+    </axis>
+  </animation>
+
+  <!-- FLIR Turret Retraction -->
+  <animation>
+    <type>translate</type>
+    <object-name>FLIRBase</object-name>
+    <object-name>FLIRHead</object-name>
+    <object-name>FLIRGlass</object-name>
+    <object-name>FLIRGlassHDR</object-name>
+    <property>sim/multiplay/generic/float[1]</property>
+    <interpolation>
+      <entry><ind> 0 </ind><dep> 0.00 </dep></entry>
+      <entry><ind> 1 </ind><dep> 0.08 </dep></entry>
+    </interpolation>
+    <center>
+      <x-m>  1.4135 </x-m>
+      <y-m>  0.0000 </y-m>
+      <z-m> -0.6400 </z-m>
+    </center>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>translate</type>
+    <object-name>FLIRBase</object-name>
+    <object-name>FLIRHead</object-name>
+    <object-name>FLIRGlass</object-name>
+    <object-name>FLIRGlassHDR</object-name>
+    <property>sim/multiplay/generic/float[1]</property>
+    <interpolation>
+      <entry><ind> 0 </ind><dep> 0.0 </dep></entry>
+      <entry><ind> 1 </ind><dep> 0.1 </dep></entry>
+    </interpolation>
+    <axis>
+      <x> 0 </x>
+      <y> 0 </y>
+      <z> 1 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>FLIRBase</object-name>
+    <object-name>FLIRHead</object-name>
+    <object-name>FLIRGlass</object-name>
+    <object-name>FLIRGlassHDR</object-name>
+    <property>sim/multiplay/generic/float[1]</property>
+    <factor> 90 </factor>
+    <center>
+      <x-m>  1.4135 </x-m>
+      <y-m>  0.0000 </y-m>
+      <z-m> -0.6400 </z-m>
+    </center>
+    <axis>
+      <x>  0 </x>
+      <y> -1 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>FLIRBase</object-name>
+    <object-name>FLIRHead</object-name>
+    <object-name>FLIRGlass</object-name>
+    <object-name>FLIRGlassHDR</object-name>
+    <property>sim/multiplay/generic/float[1]</property>
+    <factor> 90 </factor>
+    <center>
+      <x-m>  1.4135 </x-m>
+      <y-m>  0.0000 </y-m>
+      <z-m> -0.640 </z-m>
+    </center>
+    <axis>
+      <x> 0 </x>
+      <y> 0 </y>
+      <z> 1 </z>
+    </axis>
+  </animation>
+
+  <!-- FLIR Turret View Movements -->
+  <animation>
+    <type>rotate</type>
+    <object-name>FLIRBase</object-name>
+    <object-name>FLIRHead</object-name>
+    <object-name>FLIRGlass</object-name>
+    <object-name>FLIRGlassHDR</object-name>
+    <!-- <property>sim/model/turret[0]/heading</property> -->
+    <property>sim/multiplay/generic/float[26]</property>
+    <factor>-1</factor>
+    <center>
+      <x-m>  1.4567 </x-m>
+      <y-m>  0.0000 </y-m>
+      <z-m> -0.9431 </z-m>
+    </center>
+    <axis>
+      <x> 0 </x>
+      <y> 0 </y>
+      <z> 1 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>FLIRHead</object-name>
+    <object-name>FLIRGlass</object-name>
+    <object-name>FLIRGlassHDR</object-name>
+    <!-- <property>sim/model/turret[0]/pitch</property> -->
+    <property>sim/multiplay/generic/float[27]</property>
+    <factor>1</factor>
+    <center>
+      <x-m>  1.4567 </x-m>
+      <y-m>  0.0000 </y-m>
+      <z-m> -0.9431 </z-m>
+    </center>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+
+
+  <!-- C-Band Antenna Retraction -->
+  <animation>
+    <type>translate</type>
+    <object-name>C-Band</object-name>
+    <property>gear/gear[0]/position-norm</property>
+    <interpolation>
+      <entry><ind> 0.0 </ind><dep> 0.0 </dep></entry>
+      <entry><ind> 1.0 </ind><dep> 0.3 </dep></entry>
+    </interpolation>
+    <axis>
+      <x> 0 </x>
+      <y> 0 </y>
+      <z> 1 </z>
+    </axis>
+  </animation>
+
+  <!-- USELESS -->
+  <animation>
+    <type>pick</type>
+    <object-name>porte</object-name>
+    <visible>true</visible>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <condition>
+          <and>
+            <property>gear/gear[0]/wow</property>
+            <property>gear/gear[1]/wow</property>
+            <property>gear/gear[2]/wow</property>
+            <less-than>
+              <property>gear/gear[0]/rollspeed-ms</property>
+              <value>10</value>
+            </less-than>
+          </and>
+        </condition>
+        <command>nasal</command>
+        <script>doors.crew.toggle();</script>
+      </binding>
+    </action>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>porte</object-name>
+    <!-- <property>sim/model/door-positions/crew/position-norm</property> -->
+    <property>sim/multiplay/generic/float[0]</property>
+    <factor> 155 </factor>
+    <axis>
+      <x1-m>  0.01251 </x1-m>
+      <y1-m> -0.73166 </y1-m>
+      <z1-m> -1.00844 </z1-m>
+      <x2-m>  0.78790 </x2-m>
+      <y2-m> -0.65918 </y2-m>
+      <z2-m> -1.00844 </z2-m>
+    </axis>
+  </animation>
+
+  <!-- CONFIGURATION (Normal/EW-REDET/COMINT-HEDET)-->
+
+  <animation>
+    <type>select</type>
+    <object-name>REDET</object-name>
+    <condition>
+      <property>sim/multiplay/generic/bool[0]</property>
+    </condition>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>HEDET</object-name>
+    <condition>
+      <property>sim/multiplay/generic/bool[1]</property>
+    </condition>
+  </animation>
+
+  <!-- ALL PAYLOAD AND WEAPONS -->
+
+  <!-- Centerline Pylon -->
+  <animation>
+    <type>select</type>
+    <object-name>Pylon_C1</object-name>
+    <condition>
+      <property>sim/multiplay/generic/bool[20]</property>
+    </condition>
+  </animation>
+
+  <!-- Inner Wing Pylons -->
+
+  <animation>
+    <type>select</type>
+    <object-name>Pylons_W1</object-name>
+    <condition>
+      <property>sim/multiplay/generic/bool[21]</property>
+    </condition>
+  </animation>
+
+  <!-- External Wing Pylons -->
+
+  <animation>
+    <type>select</type>
+    <object-name>Pylons_W2-1</object-name>
+    <condition>
+      <property>sim/multiplay/generic/bool[22]</property>
+    </condition>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>Pylons_W2-2</object-name>
+    <condition>
+      <property>sim/multiplay/generic/bool[23]</property>
+    </condition>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>Pylons_W2-3</object-name>
+    <condition>
+      <property>sim/multiplay/generic/bool[24]</property>
+    </condition>
+  </animation>
+
+  <!-- Aselsan Antidot-2U EW Jammer POD -->
+  <model>
+    <name>Antidot_2-U</name>
+    <path>Payload/Pod/Antidot_2-U.xml</path>
+    <offsets>
+      <x-m> -1.57770 </x-m>
+      <y-m>  5.70980 </y-m>
+      <z-m> -0.28368 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Aselsan Antidot-2U/S Electronic support system for radar detection, identification and location POD -->
+  <model>
+    <name>Antidot_2-U/S</name>
+    <path>Payload/Pod/Antidot_2-US.xml</path>
+    <offsets>
+      <x-m> -1.50640 </x-m>
+      <y-m> -5.70950 </y-m>
+      <z-m> -0.29731 </z-m>
+    </offsets>
+  </model>
+
+  <animation>
+    <type>select</type>
+    <object-name>Antidot_2-U</object-name>
+    <object-name>Antidot_2-U/S</object-name>
+    <condition>
+      <property>sim/multiplay/generic/bool[25]</property>
+    </condition>
+  </animation>
+
+  <!-- SOM-J -->
+  <model>
+    <name>SOM-J-C</name>
+    <path>Payload/Weapons/SOM-J.xml</path>
+    <offsets>
+      <x-m> -1.5907 </x-m>
+      <y-m>  0.0000 </y-m>
+      <z-m> -1.1254 </z-m>
+      <pitch-deg>-3</pitch-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <name>SOM-J-L</name>
+    <path>Payload/Weapons/SOM-J.xml</path>
+    <offsets>
+      <x-m> -1.8227 </x-m>
+      <y-m> -1.1455 </y-m>
+      <z-m> -0.5874 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <name>SOM-J-R</name>
+    <path>Payload/Weapons/SOM-J.xml</path>
+    <offsets>
+      <x-m> -1.8227 </x-m>
+      <y-m>  1.1455 </y-m>
+      <z-m> -0.5874 </z-m>
+    </offsets>
+  </model>
+
+  <animation>
+    <type>select</type>
+    <object-name>SOM-J-C</object-name>
+    <condition>
+      <property>sim/multiplay/generic/bool[26]</property>
+    </condition>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>SOM-J-C</object-name>
+    <condition>
+      <greater-than>
+        <property>sim/ai/submodels/SOM-J-1-number</property>
+        <value>0</value>
+      </greater-than>
+    </condition>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>SOM-J-L</object-name>
+    <object-name>SOM-J-R</object-name>
+    <condition>
+      <property>sim/multiplay/generic/bool[27]</property>
+    </condition>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>SOM-J-L</object-name>
+    <condition>
+      <greater-than>
+        <property>sim/ai/submodels/SOM-J-number</property>
+        <value>1</value>
+      </greater-than>
+    </condition>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>SOM-J-R</object-name>
+    <condition>
+      <greater-than>
+        <property>sim/ai/submodels/SOM-J-number</property>
+        <value>0</value>
+      </greater-than>
+    </condition>
+  </animation>
+
+  <!-- GBU-12 -->
+  <model>
+    <name>GBU-12-C</name>
+    <path>Payload/Weapons/GBU-12.xml</path>
+    <offsets>
+      <x-m> -1.6503 </x-m>
+      <y-m>  0.0000 </y-m>
+      <z-m> -1.0649 </z-m>
+      <pitch-deg>-3</pitch-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <name>GBU-12-L</name>
+    <path>Payload/Weapons/GBU-12.xml</path>
+    <offsets>
+      <x-m> -1.6607 </x-m>
+      <y-m> -1.1488 </y-m>
+      <z-m> -0.5209 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <name>GBU-12-R</name>
+    <path>Payload/Weapons/GBU-12.xml</path>
+    <offsets>
+      <x-m> -1.6607 </x-m>
+      <y-m>  1.1488 </y-m>
+      <z-m> -0.5209 </z-m>
+    </offsets>
+  </model>
+
+  <animation>
+    <type>select</type>
+    <object-name>GBU-12-C</object-name>
+    <condition>
+      <property>sim/multiplay/generic/bool[28]</property>
+    </condition>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>GBU-12-C</object-name>
+    <condition>
+      <greater-than>
+        <property>sim/ai/submodels/GBU-12-1-number</property>
+        <value>0</value>
+      </greater-than>
+    </condition>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>GBU-12-L</object-name>
+    <object-name>GBU-12-R</object-name>
+    <condition>
+      <property>sim/multiplay/generic/bool[29]</property>
+    </condition>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>GBU-12-L</object-name>
+    <condition>
+      <greater-than>
+        <property>sim/ai/submodels/GBU-12-number</property>
+        <value>1</value>
+      </greater-than>
+    </condition>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>GBU-12-R</object-name>
+    <condition>
+      <greater-than>
+        <property>sim/ai/submodels/GBU-12-number</property>
+        <value>0</value>
+      </greater-than>
+    </condition>
+  </animation>
+
+  <!-- GBU-54 -->
+  <model>
+    <name>GBU-54-1L</name>
+    <path>Payload/Weapons/GBU-54.xml</path>
+    <offsets>
+      <x-m> -1.5236 </x-m>
+      <y-m> -4.7962 </y-m>
+      <z-m> -0.2390 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <name>GBU-54-2L</name>
+    <path>Payload/Weapons/GBU-54.xml</path>
+    <offsets>
+      <x-m> -1.6410 </x-m>
+      <y-m> -3.9000 </y-m>
+      <z-m> -0.2389 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <name>GBU-54-1R</name>
+    <path>Payload/Weapons/GBU-54.xml</path>
+    <offsets>
+      <x-m> -1.5236 </x-m>
+      <y-m>  4.7962 </y-m>
+      <z-m> -0.2390 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <name>GBU-54-2R</name>
+    <path>Payload/Weapons/GBU-54.xml</path>
+    <offsets>
+      <x-m> -1.6410 </x-m>
+      <y-m>  3.9000 </y-m>
+      <z-m> -0.2389 </z-m>
+    </offsets>
+  </model>
+
+  <animation>
+    <type>select</type>
+    <object-name>GBU-54-1L</object-name>
+    <object-name>GBU-54-2L</object-name>
+    <object-name>GBU-54-1R</object-name>
+    <object-name>GBU-54-2R</object-name>
+    <condition>
+      <property>sim/multiplay/generic/bool[30]</property>
+    </condition>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>GBU-54-1L</object-name>
+    <condition>
+      <greater-than>
+        <property>sim/ai/submodels/GBU-54-number</property>
+        <value>3</value>
+      </greater-than>
+    </condition>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>GBU-54-1R</object-name>
+    <condition>
+      <greater-than>
+        <property>sim/ai/submodels/GBU-54-number</property>
+        <value>2</value>
+      </greater-than>
+    </condition>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>GBU-54-2L</object-name>
+    <condition>
+      <greater-than>
+        <property>sim/ai/submodels/GBU-54-number</property>
+        <value>1</value>
+      </greater-than>
+    </condition>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>GBU-54-2R</object-name>
+    <condition>
+      <greater-than>
+        <property>sim/ai/submodels/GBU-54-number</property>
+        <value>0</value>
+      </greater-than>
+    </condition>
+  </animation>
+
+  <!-- ****************************************************** -->
+
+  <!-- BOMBABLE -->
+
+  <nasal>
+    <load>
+      <![CDATA[
+
+      var nodeName = cmdarg().getPath();
+
+      print("Loading Akinci", nodeName);
+
+      if ( bombable.check_overall_initialized (nodeName) ) {
+        return;
+      }
+
+      var object_init = func() {
+        thisNodeName = cmdarg().getPath();
+
+        var bombableObject = {
+
+          objectNodeName : thisNodeName,
+          objectNode     : props.globals.getNode(thisNodeName),
+          updateTime_s   : 1/3,
+          altitudes : {
+            wheelsOnGroundAGL_m : 1,
+            minimumAGL_m        : 100,
+            maximumAGL_m        : 13715,
+            crashedAGL_m        : 0.6,
+          },
+          velocities : {
+            maxSpeedReduce_percent                       : 0.5,
+            minSpeed_kt                                  : 115,
+            cruiseSpeed_kt                               : 276,
+            attackSpeed_kt                               : 280,
+            maxSpeed_kt                                  : 300,
+            damagedAltitudeChangeMaxRate_meterspersecond : 30,
+
+            diveTerminalVelocities: {
+              point1: { airspeed_kt : 377, vertical_speed_fps : -41.8},
+              point2: { airspeed_kt : 416, vertical_speed_fps : -87.2},
+              point3: { airspeed_kt : 430, vertical_speed_fps : -188.8},
+              point4: { airspeed_kt : 547, vertical_speed_fps : -302},
+            },
+            climbTerminalVelocities: {
+              point1: { airspeed_kt : 344, vertical_speed_fps : 27.6},
+              point2: { airspeed_kt : 314, vertical_speed_fps : 52.6},
+              point3: { airspeed_kt : 297, vertical_speed_fps : 88},
+              point4: { airspeed_kt : 252, vertical_speed_fps : 88},
+            },
+          },
+          evasions : {
+            dodgeDelayMax_sec             : 15,
+            dodgeDelayMin_sec             : 5,
+            dodgeMax_deg                  : 79,
+            dodgeMin_deg                  : 58,
+            rollRateMax_degpersec         : 65,
+            dodgeROverLPreference_percent : 50,
+            dodgeAltMax_m                 : 5000,
+            dodgeAltMin_m                 : -5000,
+            dodgeVertSpeedClimb_mps       : 80,
+            dodgeVertSpeedDive_mps        : 160,
+          },
+          attacks : {
+            maxDistance_m              : 20000,
+            minDistance_m              : 1600,
+            continueAttackAngle_deg    : 80,
+            altitudeHigherCutoff_m     : 15000,
+            altitudeLowerCutoff_m      : 10000,
+            rollMin_deg                : 58,
+            rollMax_deg                : 79,
+            rollRateMax_degpersec      : 65,
+            climbPower                 : 4500,
+            divePower                  : 9000,
+            attackCheckTime_sec        : 6,
+            attackCheckTimeEngaged_sec : 0.6,
+          },
+          weapons : {
+            cannon_left_up : {
+              name                : "20 mm Machine Gun",
+              maxDamage_percent   : 25,
+              maxDamageDistance_m : 1500,
+              weaponAngle_deg     : { heading: 0, elevation: 0 },
+              weaponOffset_m      : { x:-5.974, y:-0.110, z:0.530 },
+              weaponSize_m        : { start:0.1, end:0.1 },
+            },
+            cannon_right_up : {
+              name                : "20 mm Machine Gun",
+              maxDamage_percent   : 25,
+              maxDamageDistance_m : 1500,
+              weaponAngle_deg     : { heading: 0, elevation: 0 },
+              weaponOffset_m      : { x:-6.318, y:0.109, z:0.530 },
+              weaponSize_m        : { start:0.1, end:0.1 },
+            },
+            cannon_left_center : {
+              name                : "7.92 mm Machine Gun",
+              maxDamage_percent   : 15,
+              maxDamageDistance_m : 1500,
+              weaponAngle_deg     : { heading: 0, elevation: 0 },
+              weaponOffset_m      : { x:-5.759, y:-0.216, z:0.405 },
+              weaponSize_m        : { start:0.1, end:0.1 },
+            },
+            cannon_right_center : {
+              name                : "7.92 mm Machine Gun",
+              maxDamage_percent   : 15,
+              maxDamageDistance_m : 1500,
+              weaponAngle_deg     : { heading: 0, elevation: 0 },
+              weaponOffset_m      : { x:-5.759, y:0.216, z:0.405 },
+              weaponSize_m        : { start:0.1, end:0.1 },
+            },
+            cannon_left_bottom : {
+              name                : "7.92 mm Machine Gun",
+              maxDamage_percent   : 15,
+              maxDamageDistance_m : 1500,
+              weaponAngle_deg     : { heading: 0, elevation: 0 },
+              weaponOffset_m      : { x:-5.459, y:-0.128, z:-0.156 },
+              weaponSize_m        : { start:0.1, end:0.1 },
+            },
+            cannon_right_bottom : {
+              name                : "7.92 mm Machine Gun",
+              maxDamage_percent   : 15,
+              maxDamageDistance_m : 1500,
+              weaponAngle_deg     : { heading: 0, elevation: 0 },
+              weaponOffset_m      : { x:-5.459, y:0.128, z:-0.156 },
+              weaponSize_m        : { start:0.1, end:0.1 },
+            },
+            cannon_rear : {
+              name                : "7.92 mm Machine Gun",
+              maxDamage_percent   : 15,
+              maxDamageDistance_m : 1500,
+              weaponAngle_deg     : { heading: 180, elevation: 15 },
+              weaponOffset_m      : { x:-1.060, y:0.000, z:1.100 },
+              weaponSize_m        : { start:0.1, end:0.1 },
+            },
+          },
+          dimensions : {
+            width_m             : 26.82,
+            length_m            : 27.13,
+            height_m            : 7.62,
+            damageRadius_m      : 8,
+            vitalDamageRadius_m : 1,
+          },
+          vulnerabilities : {
+            damageVulnerability               : 45,
+            engineDamageVulnerability_percent : 4,
+            fireVulnerability_percent         : 5,
+            fireDamageRate_percentpersecond   : 0.2,
+            fireExtinguishMaxTime_seconds     : 50,
+            fireExtinguishSuccess_percentage  : 50,
+            explosiveMass_kg                  : 40772 ,
+          },
+          damageLiveries : {
+            damageLivery : [  ]
+          },
+        };
+        bombable.initialize ( bombableObject );
+        # bombable.location_init ( thisNodeName );
+        bombable.ground_init ( thisNodeName );
+        bombable.bombable_init ( thisNodeName );
+        bombable.attack_init ( thisNodeName );
+        bombable.weapons_init ( thisNodeName );
+        bombable.startSmoke("pistonexhaust", thisNodeName );
+      }
+      object_init();
+      ]]>
+    </load>
+    <unload>
+      <![CDATA[
+        print("Unload Akinci.");
+        var nodeName= cmdarg().getPath();
+        bombable.de_overall_initialize( nodeName );
+        bombable.initialize_del( nodeName );
+        bombable.ground_del( nodeName );
+        bombable.location_del (nodeName);
+        bombable.bombable_del( nodeName );
+        bombable.attack_del( nodeName );
+        bombable.weapons_del (nodeName);
+      ]]>
+    </unload>
+  </nasal>
+
+</PropertyList>

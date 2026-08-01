@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <!-- SOM-J Launch -->
+  <missile>
+    <model>Aircraft/Akinci/Models/Payload/Weapons/SOM-J.xml</model>
+    <speed>980</speed>
+    <repeat>false</repeat>
+    <delay>0.2</delay>
+    <count>-1</count>
+    <life>1000</life>
+    <wind>false</wind>
+    <weight>500</weight>
+    <cd>0.295</cd>
+    <eda>0.61629</eda>
+    <fuse-range>2.2</fuse-range>
+    <aero-stabilised>true</aero-stabilised>
+    <collision>true</collision>
+    <impact>true</impact>
+    <impact-reports>ai/models/model-impact</impact-reports>
+    <submodel-path>Aircraft/Akinci/Models/Payload/Weapons/Impact/bomb-impact.xml</submodel-path>
+  </missile>
+
+  <!-- SOM-J Launcher -->
+  <submodel>
+    <name>Missile Release C</name>
+    <model            alias="../../missile/model"/>
+    <trigger>sim/multiplay/generic/int[12]</trigger>
+    <speed            alias="../../missile/speed"/>
+    <repeat           alias="../../missile/repeat"/>
+    <delay            alias="../../missile/delay"/>
+    <count            alias="../../missile/count"/>
+    <life             alias="../../missile/life"/>
+    <wind             alias="../../missile/wind"/>
+    <weight           alias="../../missile/weight"/>
+    <cd               alias="../../missile/cd"/>
+    <eda              alias="../../missile/eda"/>
+    <fuse-range       alias="../../missile/fuse-range"/>
+    <aero-stabilised  alias="../../missile/aero-stabilised"/>
+    <collision        alias="../../missile/collision"/>
+    <impact           alias="../../missile/impact"/>
+    <impact-reports   alias="../../missile/impact-reports"/>
+    <submodel-path    alias="../../missile/submodel-path"/>
+    <yaw-offset       alias="../../missile/yaw-offset"/>
+    <pitch-offset     alias="../../missile/pitch-offset"/>
+    <offsets>
+      <x-m> -1.5907 </x-m>
+      <y-m>  0.0000 </y-m>
+      <z-m> -1.1254 </z-m>
+    </offsets>
+  </submodel>
+
+  <submodel>
+    <name>Missile Release L</name>
+    <model            alias="../../missile/model"/>
+    <trigger>sim/multiplay/generic/int[14]</trigger>
+    <speed            alias="../../missile/speed"/>
+    <repeat           alias="../../missile/repeat"/>
+    <delay            alias="../../missile/delay"/>
+    <count            alias="../../missile/count"/>
+    <life             alias="../../missile/life"/>
+    <wind             alias="../../missile/wind"/>
+    <weight           alias="../../missile/weight"/>
+    <cd               alias="../../missile/cd"/>
+    <eda              alias="../../missile/eda"/>
+    <fuse-range       alias="../../missile/fuse-range"/>
+    <aero-stabilised  alias="../../missile/aero-stabilised"/>
+    <collision        alias="../../missile/collision"/>
+    <impact           alias="../../missile/impact"/>
+    <impact-reports   alias="../../missile/impact-reports"/>
+    <submodel-path    alias="../../missile/submodel-path"/>
+    <yaw-offset       alias="../../missile/yaw-offset"/>
+    <pitch-offset     alias="../../missile/pitch-offset"/>
+    <offsets>
+      <x-m> -1.8227 </x-m>
+      <y-m> -1.1455 </y-m>
+      <z-m> -0.5874 </z-m>
+    </offsets>
+  </submodel>
+
+  <submodel>
+    <name>Missile Release R</name>
+    <model            alias="../../missile/model"/>
+    <trigger>sim/multiplay/generic/int[13]</trigger>
+    <speed            alias="../../missile/speed"/>
+    <repeat           alias="../../missile/repeat"/>
+    <delay            alias="../../missile/delay"/>
+    <count            alias="../../missile/count"/>
+    <life             alias="../../missile/life"/>
+    <wind             alias="../../missile/wind"/>
+    <weight           alias="../../missile/weight"/>
+    <cd               alias="../../missile/cd"/>
+    <eda              alias="../../missile/eda"/>
+    <fuse-range       alias="../../missile/fuse-range"/>
+    <aero-stabilised  alias="../../missile/aero-stabilised"/>
+    <collision        alias="../../missile/collision"/>
+    <impact           alias="../../missile/impact"/>
+    <impact-reports   alias="../../missile/impact-reports"/>
+    <submodel-path    alias="../../missile/submodel-path"/>
+    <yaw-offset       alias="../../missile/yaw-offset"/>
+    <pitch-offset     alias="../../missile/pitch-offset"/>
+    <offsets>
+      <x-m> -1.8227 </x-m>
+      <y-m>  1.1455 </y-m>
+      <z-m> -0.5874 </z-m>
+    </offsets>
+  </submodel>
+
+  <!-- GBU-12 Launch -->
+  <bomb>
+    <model>Aircraft/Akinci/Models/Payload/Weapons/GBU-12.xml</model>
+    <speed-prop>
+      <property>velocities/airspeed-kt</property>
+    </speed-prop>
+    <repeat>false</repeat>
+    <delay>0.2</delay>
+    <count>-1</count>
+    <life>1000</life>
+    <wind>false</wind>
+    <weight>500</weight>
+    <cd>0.295</cd>
+    <eda>0.61629</eda>
+    <fuse-range>2.2</fuse-range>
+    <aero-stabilised>true</aero-stabilised>
+    <collision>true</collision>
+    <impact>true</impact>
+    <impact-reports>ai/models/model-impact</impact-reports>
+    <submodel-path>Aircraft/Akinci/Models/Payload/Weapons/Impact/bomb-impact.xml</submodel-path>
+  </bomb>
+
+  <!-- GBU-12 Launcher -->
+  <submodel>
+    <name>GBU-12 Release C</name>
+    <model            alias="../../bomb/model"/>
+    <trigger>sim/multiplay/generic/int[15]</trigger>
+    <speed-prop       alias="../../bomb/speed-prop"/>
+    <repeat           alias="../../bomb/repeat"/>
+    <delay            alias="../../bomb/delay"/>
+    <count            alias="../../bomb/count"/>
+    <life             alias="../../bomb/life"/>
+    <wind             alias="../../bomb/wind"/>
+    <weight           alias="../../bomb/weight"/>
+    <cd               alias="../../bomb/cd"/>
+    <eda              alias="../../bomb/eda"/>
+    <fuse-range       alias="../../bomb/fuse-range"/>
+    <aero-stabilised  alias="../../bomb/aero-stabilised"/>
+    <collision        alias="../../bomb/collision"/>
+    <impact           alias="../../bomb/impact"/>
+    <impact-reports   alias="../../bomb/impact-reports"/>
+    <submodel-path    alias="../../bomb/submodel-path"/>
+    <yaw-offset       alias="../../bomb/yaw-offset"/>
+    <pitch-offset     alias="../../bomb/pitch-offset"/>
+    <offsets>
+      <x-m> -1.6503 </x-m>
+      <y-m>  0.0000 </y-m>
+      <z-m> -1.0649 </z-m>
+    </offsets>
+  </submodel>
+
+  <submodel>
+    <name>GBU-12 Release L</name>
+    <model            alias="../../bomb/model"/>
+    <trigger>sim/multiplay/generic/int[17]</trigger>
+    <speed-prop       alias="../../bomb/speed-prop"/>
+    <repeat           alias="../../bomb/repeat"/>
+    <delay            alias="../../bomb/delay"/>
+    <count            alias="../../bomb/count"/>
+    <life             alias="../../bomb/life"/>
+    <wind             alias="../../bomb/wind"/>
+    <weight           alias="../../bomb/weight"/>
+    <cd               alias="../../bomb/cd"/>
+    <eda              alias="../../bomb/eda"/>
+    <fuse-range       alias="../../bomb/fuse-range"/>
+    <aero-stabilised  alias="../../bomb/aero-stabilised"/>
+    <collision        alias="../../bomb/collision"/>
+    <impact           alias="../../bomb/impact"/>
+    <impact-reports   alias="../../bomb/impact-reports"/>
+    <submodel-path    alias="../../bomb/submodel-path"/>
+    <yaw-offset       alias="../../bomb/yaw-offset"/>
+    <pitch-offset     alias="../../bomb/pitch-offset"/>
+    <offsets>
+      <x-m> -1.6607 </x-m>
+      <y-m> -1.1488 </y-m>
+      <z-m> -0.5209 </z-m>
+    </offsets>
+  </submodel>
+
+  <submodel>
+    <name>GBU-12 Release R</name>
+    <model            alias="../../bomb/model"/>
+    <trigger>sim/multiplay/generic/int[16]</trigger>
+    <speed-prop       alias="../../bomb/speed-prop"/>
+    <repeat           alias="../../bomb/repeat"/>
+    <delay            alias="../../bomb/delay"/>
+    <count            alias="../../bomb/count"/>
+    <life             alias="../../bomb/life"/>
+    <wind             alias="../../bomb/wind"/>
+    <weight           alias="../../bomb/weight"/>
+    <cd               alias="../../bomb/cd"/>
+    <eda              alias="../../bomb/eda"/>
+    <fuse-range       alias="../../bomb/fuse-range"/>
+    <aero-stabilised  alias="../../bomb/aero-stabilised"/>
+    <collision        alias="../../bomb/collision"/>
+    <impact           alias="../../bomb/impact"/>
+    <impact-reports   alias="../../bomb/impact-reports"/>
+    <submodel-path    alias="../../bomb/submodel-path"/>
+    <yaw-offset       alias="../../bomb/yaw-offset"/>
+    <pitch-offset     alias="../../bomb/pitch-offset"/>
+    <offsets>
+      <x-m> -1.6607 </x-m>
+      <y-m> -1.1488 </y-m>
+      <z-m> -0.5209 </z-m>
+    </offsets>
+  </submodel>
+
+  <!-- GBU-54 Launch -->
+  <gbu54>
+    <model>Aircraft/Akinci/Models/Payload/Weapons/GBU-54.xml</model>
+    <speed-prop>
+      <property>velocities/airspeed-kt</property>
+    </speed-prop>
+    <repeat>false</repeat>
+    <delay>0.2</delay>
+    <count>-1</count>
+    <life>1000</life>
+    <wind>false</wind>
+    <weight>500</weight>
+    <cd>0.295</cd>
+    <eda>0.61629</eda>
+    <fuse-range>2.2</fuse-range>
+    <aero-stabilised>true</aero-stabilised>
+    <collision>true</collision>
+    <impact>true</impact>
+    <impact-reports>ai/models/model-impact</impact-reports>
+    <submodel-path>Aircraft/Akinci/Models/Payload/Weapons/Impact/bomb-impact.xml</submodel-path>
+  </gbu54>
+
+  <!-- GBU-54 Launcher -->
+  <submodel>
+    <name>GBU-54 Release 1L</name>
+    <model            alias="../../gbu54/model"/>
+    <trigger>sim/multiplay/generic/int[21]</trigger>
+    <speed-prop       alias="../../gbu54/speed-prop"/>
+    <repeat           alias="../../gbu54/repeat"/>
+    <delay            alias="../../gbu54/delay"/>
+    <count            alias="../../gbu54/count"/>
+    <life             alias="../../gbu54/life"/>
+    <wind             alias="../../gbu54/wind"/>
+    <weight           alias="../../gbu54/weight"/>
+    <cd               alias="../../gbu54/cd"/>
+    <eda              alias="../../gbu54/eda"/>
+    <fuse-range       alias="../../gbu54/fuse-range"/>
+    <aero-stabilised  alias="../../gbu54/aero-stabilised"/>
+    <collision        alias="../../gbu54/collision"/>
+    <impact           alias="../../gbu54/impact"/>
+    <impact-reports   alias="../../gbu54/impact-reports"/>
+    <submodel-path    alias="../../gbu54/submodel-path"/>
+    <yaw-offset       alias="../../gbu54/yaw-offset"/>
+    <pitch-offset     alias="../../gbu54/pitch-offset"/>
+    <offsets>
+      <x-m> -1.5236 </x-m>
+      <y-m> -4.7962 </y-m>
+      <z-m> -0.2390 </z-m>
+    </offsets>
+  </submodel>
+
+  <submodel>
+    <name>GBU-54 Release 1R</name>
+    <model            alias="../../gbu54/model"/>
+    <trigger>sim/multiplay/generic/int[20]</trigger>
+    <speed-prop       alias="../../gbu54/speed-prop"/>
+    <repeat           alias="../../gbu54/repeat"/>
+    <delay            alias="../../gbu54/delay"/>
+    <count            alias="../../gbu54/count"/>
+    <life             alias="../../gbu54/life"/>
+    <wind             alias="../../gbu54/wind"/>
+    <weight           alias="../../gbu54/weight"/>
+    <cd               alias="../../gbu54/cd"/>
+    <eda              alias="../../gbu54/eda"/>
+    <fuse-range       alias="../../gbu54/fuse-range"/>
+    <aero-stabilised  alias="../../gbu54/aero-stabilised"/>
+    <collision        alias="../../gbu54/collision"/>
+    <impact           alias="../../gbu54/impact"/>
+    <impact-reports   alias="../../gbu54/impact-reports"/>
+    <submodel-path    alias="../../gbu54/submodel-path"/>
+    <yaw-offset       alias="../../gbu54/yaw-offset"/>
+    <pitch-offset     alias="../../gbu54/pitch-offset"/>
+    <offsets>
+      <x-m> -1.5236 </x-m>
+      <y-m>  4.7962 </y-m>
+      <z-m> -0.2390 </z-m>
+    </offsets>
+  </submodel>
+
+  <submodel>
+    <name>GBU-54 Release 2L</name>
+    <model            alias="../../gbu54/model"/>
+    <trigger>sim/multiplay/generic/int[19]</trigger>
+    <speed-prop       alias="../../gbu54/speed-prop"/>
+    <repeat           alias="../../gbu54/repeat"/>
+    <delay            alias="../../gbu54/delay"/>
+    <count            alias="../../gbu54/count"/>
+    <life             alias="../../gbu54/life"/>
+    <wind             alias="../../gbu54/wind"/>
+    <weight           alias="../../gbu54/weight"/>
+    <cd               alias="../../gbu54/cd"/>
+    <eda              alias="../../gbu54/eda"/>
+    <fuse-range       alias="../../gbu54/fuse-range"/>
+    <aero-stabilised  alias="../../gbu54/aero-stabilised"/>
+    <collision        alias="../../gbu54/collision"/>
+    <impact           alias="../../gbu54/impact"/>
+    <impact-reports   alias="../../gbu54/impact-reports"/>
+    <submodel-path    alias="../../gbu54/submodel-path"/>
+    <yaw-offset       alias="../../gbu54/yaw-offset"/>
+    <pitch-offset     alias="../../gbu54/pitch-offset"/>
+    <offsets>
+      <x-m> -1.6410 </x-m>
+      <y-m> -3.9000 </y-m>
+      <z-m> -0.2389 </z-m>
+    </offsets>
+  </submodel>
+
+  <submodel>
+    <name>GBU-54 Release 2R</name>
+    <model            alias="../../gbu54/model"/>
+    <trigger>sim/multiplay/generic/int[18]</trigger>
+    <speed-prop       alias="../../gbu54/speed-prop"/>
+    <repeat           alias="../../gbu54/repeat"/>
+    <delay            alias="../../gbu54/delay"/>
+    <count            alias="../../gbu54/count"/>
+    <life             alias="../../gbu54/life"/>
+    <wind             alias="../../gbu54/wind"/>
+    <weight           alias="../../gbu54/weight"/>
+    <cd               alias="../../gbu54/cd"/>
+    <eda              alias="../../gbu54/eda"/>
+    <fuse-range       alias="../../gbu54/fuse-range"/>
+    <aero-stabilised  alias="../../gbu54/aero-stabilised"/>
+    <collision        alias="../../gbu54/collision"/>
+    <impact           alias="../../gbu54/impact"/>
+    <impact-reports   alias="../../gbu54/impact-reports"/>
+    <submodel-path    alias="../../gbu54/submodel-path"/>
+    <yaw-offset       alias="../../gbu54/yaw-offset"/>
+    <pitch-offset     alias="../../gbu54/pitch-offset"/>
+    <offsets>
+      <x-m> -1.6410 </x-m>
+      <y-m>  3.9000 </y-m>
+      <z-m> -0.2389 </z-m>
+    </offsets>
+  </submodel>
+
+</PropertyList>

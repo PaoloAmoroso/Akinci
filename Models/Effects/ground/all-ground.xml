@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <!-- Noze wheel -->
+  <model>
+    <path>ground0.xml</path>
+    <offsets>
+      <x-m> -3.7621 </x-m>
+      <y-m>  0.0000 </y-m>
+      <z-m> -1.8061 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Left wheel -->
+  <model>
+    <path>ground1.xml</path>
+    <offsets>
+      <x-m> -0.72789 </x-m>
+      <y-m> -1.42300 </y-m>
+      <z-m> -1.80610 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Right wheel -->
+  <model>
+    <path>ground2.xml</path>
+    <offsets>
+      <x-m> -0.72789 </x-m>
+      <y-m>  1.42300 </y-m>
+      <z-m> -1.80610 </z-m>
+    </offsets>
+  </model>
+
+</PropertyList>
