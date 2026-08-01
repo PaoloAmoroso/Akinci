@@ -1,0 +1,438 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <fx>
+
+    <!-- Engine 1 -->
+    <crank>
+      <name>engstart1</name>
+      <path>starter.wav</path>
+      <condition>
+        <!-- <property>controls/engines/engine[0]/starter</property> -->
+        <property>sim/multiplay/generic/bool[17]</property>
+      </condition>
+      <volume>
+        <property>orientation/alpha-deg</property>
+        <type>log</type>
+        <min>0.5</min>
+        <max>2.0</max>
+      </volume>
+      <reference-dist>100</reference-dist>
+      <max-dist>1000</max-dist>
+    </crank>
+
+    <engine>
+      <name>engine1</name>
+      <mode>looped</mode>
+      <path>running.wav</path>
+      <condition>
+        <!-- <property>engines/engine[0]/running</property> -->
+        <property>sim/multiplay/generic/bool[9]</property>
+        <!-- <not><property>controls/engines/engine[0]/cutoff</property></not> -->
+        <not><property>sim/multiplay/generic/bool[6]</property></not>
+      </condition>
+      <volume>
+        <!-- <property>engines/engine[0]/n1</property> -->
+        <property>sim/multiplay/generic/float[4]</property>
+        <factor type="double">0.0025</factor>
+      </volume>
+      <pitch>
+        <!-- <property>engines/engine[0]/n1</property> -->
+        <property>sim/multiplay/generic/float[4]</property>
+        <factor>0.02</factor>
+        <offset>-0.1</offset>
+      </pitch>
+      <reference-dist>100</reference-dist>
+      <max-dist>1000</max-dist>
+    </engine>
+
+    <engine>
+      <name>enginerun1</name>
+      <mode>looped</mode>
+      <path>running.wav</path>
+      <condition>
+        <!-- <property>engines/engine[0]/running</property> -->
+        <property>sim/multiplay/generic/bool[9]</property>
+        <!-- <not><property>controls/engines/engine[0]/cutoff</property></not> -->
+        <not><property>sim/multiplay/generic/bool[6]</property></not>
+        <greater-than>
+          <!-- <property>engines/engine[0]/prop-thrust</property> -->
+          <property>sim/multiplay/generic/float[10]</property>
+          <value>150</value>
+        </greater-than>
+        <less-than>
+          <!-- <property>engines/engine[0]/prop-thrust</property> -->
+          <property>sim/multiplay/generic/float[10]</property>
+          <value>3000</value>
+        </less-than>
+      </condition>
+      <volume>
+        <property>orientation/alpha-deg</property>
+        <type>log</type>
+        <min>1.0</min>
+        <max>1.5</max>
+      </volume>
+      <volume>
+        <property>sim/current-view/internal</property>
+        <offset>1.0</offset>
+        <factor>-0.4</factor>
+      </volume>
+      <pitch>
+        <!-- <property>engines/engine[0]/prop-thrust</property> -->
+        <property>sim/multiplay/generic/float[10]</property>
+        <factor>0.0009496</factor>
+        <min>0.6</min>
+        <max>2.0</max>
+        <offset>0</offset>
+      </pitch>
+      <reference-dist>100</reference-dist>
+      <max-dist>1000</max-dist>
+    </engine>
+
+    <propeller>
+      <name>propeller-external1</name>
+      <mode>looped</mode>
+      <path>propeller.wav</path>
+      <condition>
+        <!-- <property>engines/engine[0]/running</property> -->
+        <property>sim/multiplay/generic/bool[9]</property>
+        <!-- <not><property>controls/engines/engine[0]/cutoff</property></not> -->
+        <not><property>sim/multiplay/generic/bool[6]</property></not>
+        <not><property>sim/current-view/internal</property></not>
+        <greater-than>
+          <!-- <property>engines/engine[0]/prop-thrust</property> -->
+          <property>sim/multiplay/generic/float[10]</property>
+          <value>100</value>
+        </greater-than>
+      </condition>
+      <volume>
+        <property>orientation/alpha-deg</property>
+        <type>log</type>
+        <min> 0.2 </min>
+        <max> 1.0 </max>
+      </volume>
+      <volume>
+        <factor> 0.5 </factor>
+      </volume>
+      <pitch>
+        <!-- <property>engines/engine[0]/prop-thrust</property> -->
+        <property>sim/multiplay/generic/float[10]</property>
+        <factor> 0.0036 </factor>
+        <min> 0.5 </min>
+        <max> 2.0 </max>
+        <offset> 0.9 </offset>
+      </pitch>
+      <reference-dist>100</reference-dist>
+      <max-dist>1000</max-dist>
+    </propeller>
+
+    <!-- Engine 2 -->
+    <crank>
+      <name>engstart2</name>
+      <path>starter.wav</path>
+      <condition>
+        <!-- <property>controls/engines/engine[1]/starter</property> -->
+        <property>sim/multiplay/generic/bool[18]</property>
+      </condition>
+      <volume>
+        <property>orientation/alpha-deg</property>
+        <type>log</type>
+        <min>0.5</min>
+        <max>2.0</max>
+      </volume>
+      <reference-dist>100</reference-dist>
+      <max-dist>1000</max-dist>
+    </crank>
+
+    <engine>
+      <name>engine2</name>
+      <mode>looped</mode>
+      <path>running.wav</path>
+      <condition>
+        <!-- <property>engines/engine[1]/running</property> -->
+        <property>sim/multiplay/generic/bool[10]</property>
+        <!-- <not><property>controls/engines/engine[1]/cutoff</property></not> -->
+        <not><property>sim/multiplay/generic/bool[7]</property></not>
+      </condition>
+      <volume>
+        <!-- <property>engines/engine[1]/n1</property> -->
+        <property>sim/multiplay/generic/float[5]</property>
+        <factor type="double">0.0025</factor>
+      </volume>
+      <pitch>
+        <!-- <property>engines/engine[1]/n1</property> -->
+        <property>sim/multiplay/generic/float[5]</property>
+        <factor>0.02</factor>
+        <offset>-0.1</offset>
+      </pitch>
+      <reference-dist>100</reference-dist>
+      <max-dist>1000</max-dist>
+    </engine>
+
+    <engine>
+      <name>enginerun2</name>
+      <mode>looped</mode>
+      <path>running.wav</path>
+      <condition>
+        <!-- <property>engines/engine[1]/running</property> -->
+        <property>sim/multiplay/generic/bool[10]</property>
+        <!-- <not><property>controls/engines/engine[1]/cutoff</property></not> -->
+        <not><property>sim/multiplay/generic/bool[7]</property></not>
+        <greater-than>
+          <!-- <property>engines/engine[1]/prop-thrust</property> -->
+          <property>sim/multiplay/generic/float[11]</property>
+          <value>150</value>
+        </greater-than>
+        <less-than>
+          <!-- <property>engines/engine[1]/prop-thrust</property> -->
+          <property>sim/multiplay/generic/float[11]</property>
+          <value>3000</value>
+        </less-than>
+      </condition>
+      <volume>
+        <property>orientation/alpha-deg</property>
+        <type>log</type>
+        <min>1.0</min>
+        <max>1.5</max>
+      </volume>
+      <volume>
+        <property>sim/current-view/internal</property>
+        <offset>1.0</offset>
+        <factor>-0.4</factor>
+      </volume>
+      <pitch>
+        <!-- <property>engines/engine[1]/prop-thrust</property> -->
+        <property>sim/multiplay/generic/float[11]</property>
+        <factor>0.0009496</factor>
+        <min>0.6</min>
+        <max>2.0</max>
+        <offset>0</offset>
+      </pitch>
+      <reference-dist>100</reference-dist>
+      <max-dist>1000</max-dist>
+    </engine>
+
+    <propeller>
+      <name>propeller-external2</name>
+      <mode>looped</mode>
+      <path>propeller.wav</path>
+      <condition>
+        <!-- <property>engines/engine[1]/running</property> -->
+        <property>sim/multiplay/generic/bool[10]</property>
+        <!-- <not><property>controls/engines/engine[1]/cutoff</property></not> -->
+        <not><property>sim/multiplay/generic/bool[7]</property></not>
+        <not><property>sim/current-view/internal</property></not>
+        <greater-than>
+          <!-- <property>engines/engine[1]/prop-thrust</property> -->
+          <property>sim/multiplay/generic/float[11]</property>
+          <value>100</value>
+        </greater-than>
+      </condition>
+      <volume>
+        <property>orientation/alpha-deg</property>
+        <type>log</type>
+        <min> 0.2 </min>
+        <max> 1.0 </max>
+      </volume>
+      <volume>
+        <factor> 0.5 </factor>
+      </volume>
+      <pitch>
+        <!-- <property>engines/engine[1]/prop-thrust</property> -->
+        <property>sim/multiplay/generic/float[11]</property>
+        <factor> 0.0036 </factor>
+        <min> 0.5 </min>
+        <max> 2.0 </max>
+        <offset> 0.9 </offset>
+      </pitch>
+      <reference-dist>100</reference-dist>
+      <max-dist>1000</max-dist>
+    </propeller>
+
+    <!-- *************************** -->
+    <rumble>
+      <name>rumble</name>
+      <mode>looped</mode>
+      <path>Sounds/rumble.wav</path>
+      <condition>
+        <or>
+          <property>gear/gear[0]/wow</property>
+          <property>gear/gear[1]/wow</property>
+          <property>gear/gear[2]/wow</property>
+        </or>
+      </condition>
+      <volume>
+        <property>velocities/airspeed-kt</property>
+        <type>log</type>
+        <factor>0.25</factor>
+      </volume>
+      <reference-dist>100</reference-dist>
+      <max-dist>1000</max-dist>
+    </rumble>
+
+    <gear>
+      <name>gear</name>
+      <mode>in-transit</mode>
+      <path>gear.wav</path>
+      <property>gear/gear[0]/position-norm</property>
+      <reference-dist>100</reference-dist>
+      <max-dist>1000</max-dist>
+    </gear>
+
+    <gear>
+      <name>gear-lock</name>
+      <path>Sounds/gear-lck.wav</path>
+      <condition>
+        <greater-than>
+          <property>gear/gear[0]/position-norm</property>
+          <value>0.9</value>
+        </greater-than>
+      </condition>
+      <reference-dist>100</reference-dist>
+      <max-dist>1000</max-dist>
+    </gear>
+
+    <squeal>
+      <name>squeal</name>
+      <path>Sounds/squeal.wav</path>
+      <condition>
+        <or>
+          <property>gear/gear[0]/wow</property>
+          <property>gear/gear[1]/wow</property>
+          <property>gear/gear[2]/wow</property>
+        </or>
+      </condition>
+      <volume>
+        <property>velocities/speed-down-fps</property>
+        <factor>0.5</factor>
+        <max>1.0</max>
+      </volume>
+      <volume>
+        <property>velocities/airspeed-kt</property>
+        <factor>0.01</factor>
+        <max>1.0</max>
+      </volume>
+      <volume>
+        <internal>dt_stop</internal>
+        <factor>0.05</factor>
+        <max>1.0</max>
+      </volume>
+      <pitch>
+        <property>velocities/airspeed-kt</property>
+        <factor>0.0025</factor>
+        <offset>0.5</offset>
+        <max>1.0</max>
+      </pitch>
+      <reference-dist>100</reference-dist>
+      <max-dist>1000</max-dist>
+    </squeal>
+
+    <flap>
+      <name>flaps</name>
+      <mode>in-transit</mode>
+      <path>flaps.wav</path>
+      <property>surface-positions/flap-pos-norm</property>
+      <volume>
+        <factor>0.8</factor>
+      </volume>
+      <reference-dist>100</reference-dist>
+      <max-dist>1000</max-dist>
+    </flap>
+
+    <wind>
+      <name>wind</name>
+      <mode>looped</mode>
+      <path>wind.wav</path>
+      <property>velocities/airspeed-kt</property>
+      <volume>
+        <property>velocities/airspeed-kt</property>
+        <factor>0.0025</factor>
+        <min>0.00</min>
+        <max>0.25</max>
+      </volume>
+      <pitch>
+        <property>velocities/airspeed-kt</property>
+        <factor>0.01</factor>
+        <offset>0.5</offset>
+        <max>1.0</max>
+      </pitch>
+      <reference-dist>100</reference-dist>
+      <max-dist>1000</max-dist>
+    </wind>
+
+    <stall>
+      <name>stall</name>
+      <mode>looped</mode>
+      <path>Sounds/stall.wav</path>
+      <property>sim/alarms/stall-warning</property>
+      <volume>
+        <property>sim/alarms/stall-warning</property>
+        <max>1.0</max>
+      </volume>
+      <reference-dist>100</reference-dist>
+      <max-dist>1000</max-dist>
+    </stall>
+
+    <!-- DOORS -->
+    <door>
+      <name>Open door</name>
+      <path>door-open.wav</path>
+      <condition>
+        <greater-than>
+          <!-- <property>sim/model/door-positions/crew/position-norm</property> -->
+          <property>sim/multiplay/generic/float[0]</property>
+          <value>0.1</value>
+        </greater-than>
+      </condition>
+      <volume>
+        <factor>0.8</factor>
+      </volume>
+      <reference-dist>100</reference-dist>
+      <max-dist>1000</max-dist>
+    </door>
+
+    <door>
+      <name>Close door</name>
+      <path>door-close.wav</path>
+      <condition>
+        <equals>
+          <!-- <property>sim/model/door-positions/crew/position-norm</property> -->
+          <property>sim/multiplay/generic/float[0]</property>
+          <value>0</value>
+        </equals>
+      </condition>
+      <volume>
+        <factor>0.4</factor>
+      </volume>
+      <reference-dist>100</reference-dist>
+      <max-dist>1000</max-dist>
+    </door>
+
+    <rain>
+      <name>rain</name>
+      <mode>looped</mode>
+      <path>rain_canopy.wav</path>
+      <condition>
+        <greater-than>
+          <property>environment/rain-norm</property>
+          <value>0.2</value>
+        </greater-than>
+      </condition>
+      <volume>
+        <property>environment/rain-norm</property>
+        <factor>1.00</factor>
+        <offset>0.00</offset>
+        <min>0.4</min>
+        <max>0.9</max>
+      </volume>
+      <pitch>
+        <property>velocities/airspeed-kt</property>
+        <factor>0.001</factor>
+        <offset>1.0</offset>
+      </pitch>
+    </rain>
+
+  </fx>
+
+</PropertyList>

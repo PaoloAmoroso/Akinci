@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <efis>
+    <fixed-temp                       type="double">0</fixed-temp>
+    <hdg-bug-only                     type="bool">false</hdg-bug-only>
+    <hdg-trk-selected                 type="bool">false</hdg-trk-selected>
+    <ingh-kpa                         type="double">29.92</ingh-kpa>
+    <ingh-kpa-previous                type="double">29.92</ingh-kpa-previous>
+    <ingh-previous                    type="double">29.92</ingh-previous>
+    <inputs>
+      <arpt                           type="bool">true</arpt>
+      <nd-centered                    type="bool">false</nd-centered>
+      <sta                            type="bool">true</sta>
+      <tfc                            type="bool">false</tfc>
+      <vpt                            type="bool">false</vpt>
+      <wxr                            type="bool">false</wxr>
+    </inputs>
+    <mfd>
+      <rangearc                       type="bool">false</rangearc>
+      <true-north                     type="bool">false</true-north>
+    </mfd>
+  </efis>
+
+  <pfd>
+    <minimums-baro                    type="int">200</minimums-baro>
+    <minimums-radio                   type="int">200</minimums-radio>
+  </pfd>
+
+  <mk-viii>                           <!-- http://wiki.flightgear.org/index.php/GPWS -->
+    <serviceable                      type="bool">true</serviceable>
+    <configuration-module>
+      <category-1> 255 </category-1>  <!-- AIRCRAFT_MODE_TYPE_SELECT -->
+      <category-4>  13 </category-4>  <!-- ALTITUDE CALLOUTS -->
+      <category-8>   3 </category-8>  <!-- RADIO ALTITUDE YASIM-->
+      <category-14>  2 </category-14> <!-- AUDIO OUTPUT LEVEL -->
+    </configuration-module>
+    <inputs>
+      <arinc429>
+        <decision-height-ncd          type="bool">0</decision-height-ncd>
+        <decision-height              type="double">250</decision-height>
+      </arinc429>
+    </inputs>
+    <speaker>                         <!-- Max. distance where speaker is heard -->
+      <max-dist                       type="int">2</max-dist>
+      <reference-dist                 type="int">1</reference-dist> <!-- Distance to pilot -->
+      <volume                         type="float">0.8</volume>
+    </speaker>
+    <voice>
+      <file-prefix                    type="string">Sounds/mk-viii/</file-prefix>
+    </voice>
+  </mk-viii>
+
+  <groundradar>
+    <range                            type="double">1.2</range>
+  </groundradar>
+
+  <master-reference-gyro              n="0">
+    <heading-source                   type="bool" archive="y">true</heading-source>
+  </master-reference-gyro>
+
+  <airspeed-indicator>
+    <index                            n="0" type="double">100</index>
+    <index                            n="1" type="double">120</index>
+    <ias-limit>350.0</ias-limit>
+    <mach-limit>0.85</mach-limit>
+    <alt-threshold>8000.0</alt-threshold>
+  </airspeed-indicator>
+
+  <alerts>
+    <gear-horn                        type="bool">false</gear-horn>
+    <master-warning                   type="bool">false</master-warning>
+    <master-caution                   type="bool">false</master-caution>
+  </alerts>
+
+  <tcas>
+    <serviceable                      type="bool">true</serviceable>
+    <inputs>
+      <mode                           type="int">1</mode> <!--0=off,1=standby,2=TA-only,3=auto(TA/RA)-->
+    </inputs>
+    <voice>
+      <file-prefix                    type="string">../Sounds/tcas/female/</file-prefix>
+    </voice>
+    <tfc                              n="0" type="bool">0</tfc>
+    <tfc                              n="1" type="bool">0</tfc>
+    <speaker>
+      <max-dist                       type="double">10</max-dist>
+      <reference-dist                 type="double">2</reference-dist>
+      <volume                         type="double"> 1 </volume>
+    </speaker>
+    <range                            type="int">6</range>
+  </tcas>
+
+  <nd>
+    <radar-texture-path               type="string">Aircraft/Akinci/Models/Interior/Panel/Instruments/Symbols/tcas-display.png</radar-texture-path>
+    <symbol-texture-path              type="string">Aircraft/Akinci/Models/Interior/Panel/Instruments/Symbols/symbols.png</symbol-texture-path>
+    <font>
+      <color>
+        <red                          type="float">0.7</red>
+        <green                        type="float">0.7</green>
+        <blue                         type="float">0.7</blue>
+        <alpha                        type="float">1</alpha>
+      </color>
+      <name                           type="string">helvetica_bold.txf</name>
+      <size                           type="float">14</size>
+      <line-spacing                   type="float">0.01</line-spacing>
+    </font>
+    <serviceable                      type="bool">true</serviceable>
+    <range                            type="int" archive="y">100</range>
+    <aircraft-heading-up              type="bool">true</aircraft-heading-up>
+    <heading-up-deg                   type="float">0.01</heading-up-deg>
+    <x-center                         type="float">0.5</x-center>
+    <y-center                         type="float">0.5</y-center>
+    <display>
+      <arpt                           type="bool">1</arpt>
+      <vor                            type="bool">1</vor>
+      <fix                            type="bool">0</fix>
+      <tcas                           type="bool">0</tcas>
+    </display>
+    <line-width                       type="double">3</line-width>
+  </nd>
+
+  <tcas-display>
+    <radar-texture-path               type="string">Aircraft/Akinci/Models/Interior/Panel/Instruments/Symbols/tcas-display.png</radar-texture-path>
+    <symbol-texture-path              type="string">Aircraft/Akinci/Models/Interior/Panel/Instruments/Symbols/symbols.png</symbol-texture-path>
+    <font>
+      <color>
+        <red                          type="float">0.7</red>
+        <green                        type="float">0.7</green>
+        <blue                         type="float">0.7</blue>
+        <alpha                        type="float">1</alpha>
+      </color>
+      <name                           type="string">helvetica_bold.txf</name>
+      <size                           type="float">14</size>
+      <line-spacing                   type="float">0.01</line-spacing>
+    </font>
+    <serviceable                      type="bool">true</serviceable>
+    <range                            type="int" archive="y">6</range>
+    <aircraft-heading-up              type="bool">true</aircraft-heading-up>
+    <heading-up-deg                   type="float">0.01</heading-up-deg>
+    <x-center                         type="float">0.5</x-center>
+    <y-center                         type="float">0.5</y-center>
+    <display>
+    </display>
+    <line-width                       type="double">3</line-width>
+  </tcas-display>
+
+  <radar>
+    <display-controls>
+      <WX                             type="bool">false</WX>
+      <abs-altitude                   type="bool">false</abs-altitude>
+      <centre                         type="bool">false</centre>
+      <data                           type="bool">true</data>
+      <pos                            type="bool">true</pos>
+      <rotate                         type="bool">false</rotate>
+      <symbol                         type="bool">true</symbol>
+      <tcas                           type="bool">false</tcas>
+    </display-controls>
+    <display-mode                     type="string">arc</display-mode>
+    <echo-texture-path                type="string">Aircraft/Akinci/Models/Interior/Panel/Instruments/Symbols/wxecho.png</echo-texture-path>
+    <font>
+      <name                           type="string">typewriter.txf</name>
+      <size                           type="float">6</size>
+      <line-spacing                   type="float">0.4</line-spacing>
+      <color>
+        <red                          type="float">0.7</red>
+        <green                        type="float">0.7</green>
+        <blue                         type="float">0.7</blue>
+        <alpha                        type="float">1</alpha>
+      </color>
+    </font>
+    <heading-marker                   type="bool">false</heading-marker>
+    <lightning                        type="bool">false</lightning>
+    <limit-deg                        type="int">45</limit-deg>
+    <mode                             type="string">WX</mode>
+    <mode-control                     type="int">1</mode-control>
+    <radar-texture-path               type="string">Aircraft/Akinci/Models/Interior/Panel/Instruments/Symbols/od_wxradar.png</radar-texture-path>
+    <range                            type="int">180</range>
+    <serviceable                      type="bool">true</serviceable>
+    <status                           type="string">on</status>
+    <switch                           type="string">on</switch>
+    <switch-pos                       type="int">3</switch-pos>
+    <tilt                             type="float">0</tilt>
+    <trk                              type="float">0</trk>
+  </radar>
+
+  <primus2000>
+    <dc840>
+      <hsi                            type="bool">false</hsi>
+      <wx                             type="bool">false</wx>
+      <et                             type="bool">false</et>
+      <tcas                           type="bool">false</tcas>
+      <acft-sys                       type="bool">false</acft-sys>
+      <mfd-map                        type="bool">true</mfd-map>
+      <mfd-wx                         type="bool">false</mfd-wx>
+      <norm                           type="bool">false</norm>
+      <abn                            type="bool">false</abn>
+      <emer                           type="bool">false</emer>
+      <skp                            type="bool">false</skp>
+      <pag                            type="bool">false</pag>
+      <rcl                            type="bool">false</rcl>
+      <ent                            type="bool">false</ent>
+    </dc840>
+    <sc840>
+      <nav1ptr                        type="double">0</nav1ptr>
+      <nav2ptr                        type="double">0</nav2ptr>
+    </sc840>
+    <eicas>
+      <serviceable                    type="bool">true</serviceable>
+    </eicas>
+    <mfd>
+      <menu-num                       type="int">0</menu-num>
+    </mfd>
+    <pfd>
+    </pfd>
+  </primus2000>
+
+  <elt>
+    <on                               type="bool">false</on>
+    <armed                            type="bool">true</armed>
+    <test                             type="bool">false</test>
+  </elt>
+
+  <nav-source>
+    <selector                         type="int">0</selector>
+    <in-range                         type="bool">false</in-range>
+    <from-flag                        type="bool">false</from-flag>
+    <to-flag                          type="bool">false</to-flag>
+    <nav-loc                          type="bool">false</nav-loc>
+    <has-gs                           type="bool">false</has-gs>
+    <gs-in-range                      type="bool">false</gs-in-range>
+    <gs-rate-of-climb                 type="double">0.0</gs-rate-of-climb>
+    <gs-rate-of-climb-fpm             type="double">0.0</gs-rate-of-climb-fpm>
+    <heading-needle-deflection        type="double">0.0</heading-needle-deflection>
+    <heading-needle-deflection-norm   type="double">0.0</heading-needle-deflection-norm>
+    <gs-needle-deflection             type="double">0.0</gs-needle-deflection>
+    <selected-radial-deg              type="double">0.0</selected-radial-deg>
+    <target-radial-deg                type="double">0.0</target-radial-deg>
+    <course-error                     type="double">0.0</course-error>
+  </nav-source>
+
+  <comm                               n="0">
+    <serviceable                      type="bool">true</serviceable>
+    <power-btn                        type="bool">true</power-btn>
+    <volume                           type="double">0.95</volume>
+    <display-volume                   type="bool">false</display-volume>
+    <frequencies>
+      <selected-mhz                   type="double">121.50</selected-mhz>
+    </frequencies>
+  </comm>
+
+  <comm                               n="1">
+    <serviceable                      type="bool">true</serviceable>
+    <power-btn                        type="bool">true</power-btn>
+    <volume                           type="double">0.95</volume>
+    <display-volume                   type="bool">false</display-volume>
+    <frequencies>
+      <standby-mhz                    type="double">133.70</standby-mhz>
+    </frequencies>
+  </comm>
+
+  <nav                                n="0">
+    <serviceable                      type="bool">true</serviceable>
+    <power-btn                        type="bool">true</power-btn>
+    <volume                           type="double">0.5</volume>
+    <audio-btn                        type="bool">true</audio-btn>
+    <ident                            type="bool">true</ident>
+    <display-volume                   type="bool">false</display-volume>
+    <radials>
+      <target-radial-deg              type="float">0</target-radial-deg>
+    </radials>
+    <heading-needle-deflection-ils    type="double">0.0</heading-needle-deflection-ils>
+    <heading-needle-deflection-disp   type="double">0.0</heading-needle-deflection-disp>
+  </nav>
+
+  <nav                                n="1">
+    <serviceable                      type="bool">true</serviceable>
+    <power-btn                        type="bool">true</power-btn>
+    <volume                           type="double">0.5</volume>
+    <audio-btn                        type="bool">true</audio-btn>
+    <ident                            type="bool">true</ident>
+    <display-volume                   type="bool">false</display-volume>
+    <radials>
+      <target-radial-deg              type="float">0</target-radial-deg>
+    </radials>
+    <heading-needle-deflection-ils    type="double">0.0</heading-needle-deflection-ils>
+    <heading-needle-deflection-disp   type="double">0.0</heading-needle-deflection-disp>
+  </nav>
+
+  <adf                                n="0">
+    <adf-btn                          type="bool">true</adf-btn>
+    <bfo-btn                          type="bool">true</bfo-btn>
+    <volume-norm                      type="double">0.5</volume-norm>
+    <power-btn                        type="bool">false</power-btn>
+    <frequencies>
+      <name                           type="string">adf</name>
+      <digit                          n="0">0</digit>
+      <digit                          n="1">0</digit>
+      <digit                          n="2">0</digit>
+      <digit                          n="3">0</digit>
+      <standby-khz                    type="int">291</standby-khz>
+      <selected-khz                   type="int">379</selected-khz>
+    </frequencies>
+  </adf>
+
+  <adf                                n="1">
+    <adf-btn                          type="bool">true</adf-btn>
+    <bfo-btn                          type="bool">true</bfo-btn>
+    <volume-norm                      type="double">0.5</volume-norm>
+    <power-btn                        type="bool">false</power-btn>
+    <frequencies>
+      <name                           type="string">adf</name>
+      <digit                          n="0">0</digit>
+      <digit                          n="1">0</digit>
+      <digit                          n="2">0</digit>
+      <digit                          n="3">0</digit>
+      <standby-khz                    type="int">291</standby-khz>
+      <selected-khz                   type="int">379</selected-khz>
+    </frequencies>
+  </adf>
+
+  <dme                                n="0">
+    <serviceable                      type="bool">true</serviceable>
+    <in-range                         type="bool">true</in-range>
+    <power-btn                        type="bool">true</power-btn>
+    <ident                            type="bool">false</ident>
+    <volume                           type="double">1.0</volume>
+    <indicated-distance-nm            type="double">94.5</indicated-distance-nm>
+    <indicated-time-min               type="double">3.5</indicated-time-min>
+    <frequencies>
+      <source                         type="string">/instrumentation/dme[0]/frequencies/selected-mhz</source>
+    </frequencies>
+  </dme>
+
+  <dme                                n="1">
+    <serviceable                      type="bool">true</serviceable>
+    <in-range                         type="bool">true</in-range>
+    <power-btn                        type="bool">true</power-btn>
+    <ident                            type="bool">false</ident>
+    <volume                           type="double">1.0</volume>
+    <indicated-distance-nm            type="double">94.5</indicated-distance-nm>
+    <indicated-time-min               type="double">3.5</indicated-time-min>
+    <frequencies>
+      <source                         type="string">/instrumentation/dme[1]/frequencies/selected-mhz</source>
+    </frequencies>
+  </dme>
+
+  <encoder>
+    <serviceable                      type="bool">1</serviceable>
+    <name>encoder</name>
+    <number>0</number>
+  </encoder>
+
+  <transponder                        n="0">
+    <number                           type="int">0</number>
+    <power-btn                        type="bool">true</power-btn>
+    <serviceable                      type="bool">true</serviceable>
+    <name                             type="string">transponder</name>
+    <altitude-disp                    type="int">0</altitude-disp>
+    <altitude-valid                   type="bool">false</altitude-valid>
+    <ground-bit                       type="bool">false</ground-bit>
+    <ident                            type="bool">false</ident>
+    <inputs>
+      <ident-btn                      type="bool">false</ident-btn>
+      <knob-mode                      type="int">4</knob-mode>
+      <mode                           type="int">4</mode> <!-- 0 = Mode A, 1 = Mode C, 2 = Mode S -->
+      <serviceable                    type="bool">true</serviceable>
+    </inputs>
+    <bus-volts                        type="double">8.0</bus-volts>
+    <encoder-path                     type="string">/instrumentation/encoder</encoder-path>
+    <kt70-compatibility               type="bool">true</kt70-compatibility>
+  </transponder>
+
+</PropertyList>

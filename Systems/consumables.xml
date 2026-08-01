@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <fuel>
+    <tank        n="0">
+      <tank-num  type="int">0</tank-num>
+      <level-lbs type="double">2078</level-lbs>
+      <selected  type="bool">false</selected>
+    </tank>
+    <tank        n="1">
+      <tank-num  type="int">1</tank-num>
+      <level-lbs type="double">2078</level-lbs>
+      <selected  type="bool">false</selected>
+    </tank>
+  </fuel>
+
+</PropertyList>

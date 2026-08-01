@@ -1,0 +1,607 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <name>Configuration</name>
+  <layout>vbox</layout>
+  <modal>false</modal>
+  <draggable>true</draggable>
+  <resizable>false</resizable>
+
+  <group>
+
+    <layout>hbox</layout>
+
+    <empty>
+      <stretch>false</stretch>
+    </empty>
+    <text>
+      <label>Akinci Configuration</label>
+    </text>
+    <empty><stretch>true</stretch></empty>
+
+    <button>
+      <legend/>
+      <key>Esc</key>
+      <pref-width>16</pref-width>
+      <pref-height>16</pref-height>
+      <binding>
+        <command>nasal</command>
+        <script>akinci.load_dialog1.toggle()</script>
+      </binding>
+    </button>
+
+  </group>
+
+  <hrule/>
+
+  <group>
+    <layout>table</layout>
+    <halign>center</halign>
+    <radio>
+      <row>0</row>
+      <col>0</col>
+      <halign>left</halign>
+      <name>Akinci</name>
+      <property>/sim/model/empty-wings</property>
+      <live>true</live>
+      <label>Akinci</label>
+      <binding>
+        <command>property-assign</command>
+        <property>sim/model/empty-wings</property>
+        <value>1</value>
+      </binding>
+      <binding>
+        <command>property-assign</command>
+        <property>sim/multiplay/generic/bool[0]</property>
+        <value>0</value>
+      </binding>
+      <binding>
+        <command>property-assign</command>
+        <property>sim/multiplay/generic/bool[1]</property>
+        <value>0</value>
+      </binding>
+      <binding>
+        <command>property-assign</command>
+        <property>sim/multiplay/generic/bool[20]</property>
+        <value>0</value>
+      </binding>
+      <binding>
+        <command>property-assign</command>
+        <property>sim/multiplay/generic/bool[21]</property>
+        <value>0</value>
+      </binding>
+      <binding>
+        <command>property-assign</command>
+        <property>sim/multiplay/generic/bool[22]</property>
+        <value>0</value>
+      </binding>
+      <binding>
+        <command>property-assign</command>
+        <property>sim/multiplay/generic/bool[23]</property>
+        <value>0</value>
+      </binding>
+      <binding>
+        <command>property-assign</command>
+        <property>sim/multiplay/generic/bool[24]</property>
+        <value>0</value>
+      </binding>
+      <binding>
+        <command>property-assign</command>
+        <property>sim/multiplay/generic/bool[25]</property>
+        <value>0</value>
+      </binding>
+      <binding>
+        <command>property-assign</command>
+        <property>sim/multiplay/generic/bool[26]</property>
+        <value>0</value>
+      </binding>
+      <binding>
+        <command>property-assign</command>
+        <property>sim/multiplay/generic/bool[27]</property>
+        <value>0</value>
+      </binding>
+      <binding>
+        <command>property-assign</command>
+        <property>sim/multiplay/generic/bool[28]</property>
+        <value>0</value>
+      </binding>
+      <binding>
+        <command>property-assign</command>
+        <property>sim/multiplay/generic/bool[29]</property>
+        <value>0</value>
+      </binding>
+      <binding>
+        <command>property-assign</command>
+        <property>sim/multiplay/generic/bool[30]</property>
+        <value>0</value>
+      </binding>
+    </radio>
+
+    <radio>
+      <row>1</row>
+      <col>0</col>
+      <halign>left</halign>
+      <name>Akinci REDET-EW</name>
+        <property>sim/multiplay/generic/bool[0]</property>
+      <live>true</live>
+      <label>Akinci REDET-EW</label>
+      <binding>
+        <command>property-assign</command>
+        <property>sim/multiplay/generic/bool[1]</property>
+        <value>0</value>
+      </binding>
+      <binding>
+        <command>property-assign</command>
+        <property>sim/multiplay/generic/bool[0]</property>
+        <value>1</value>
+      </binding>
+      <binding>
+        <command>property-assign</command>
+        <property>sim/model/empty-wings</property>
+        <value>0</value>
+      </binding>
+      <binding>
+        <command>property-assign</command>
+        <property>sim/multiplay/generic/bool[20]</property>
+        <value>0</value>
+      </binding>
+      <binding>
+        <command>property-assign</command>
+        <property>sim/multiplay/generic/bool[21]</property>
+        <value>0</value>
+      </binding>
+      <binding>
+        <command>property-assign</command>
+        <property>sim/multiplay/generic/bool[22]</property>
+        <value>0</value>
+      </binding>
+      <binding>
+        <command>property-assign</command>
+        <property>sim/multiplay/generic/bool[23]</property>
+        <value>0</value>
+      </binding>
+      <binding>
+        <command>property-assign</command>
+        <property>sim/multiplay/generic/bool[24]</property>
+        <value>1</value>
+      </binding>
+      <binding>
+        <command>property-assign</command>
+        <property>sim/multiplay/generic/bool[25]</property>
+        <value>0</value>
+      </binding>
+      <binding>
+        <command>property-assign</command>
+        <property>sim/multiplay/generic/bool[26]</property>
+        <value>0</value>
+      </binding>
+      <binding>
+        <command>property-assign</command>
+        <property>sim/multiplay/generic/bool[27]</property>
+        <value>0</value>
+      </binding>
+      <binding>
+        <command>property-assign</command>
+        <property>sim/multiplay/generic/bool[28]</property>
+        <value>0</value>
+      </binding>
+      <binding>
+        <command>property-assign</command>
+        <property>sim/multiplay/generic/bool[29]</property>
+        <value>0</value>
+      </binding>
+      <binding>
+        <command>property-assign</command>
+        <property>sim/multiplay/generic/bool[30]</property>
+        <value>0</value>
+      </binding>
+
+    </radio>
+
+    <radio>
+      <row>2</row>
+      <col>0</col>
+      <halign>left</halign>
+      <name>Akinci HEDET-COMINT</name>
+      <property>sim/multiplay/generic/bool[1]</property>
+      <live>true</live>
+      <label>Akinci HEDET-COMINT</label>
+      <binding>
+        <command>property-assign</command>
+        <property>sim/multiplay/generic/bool[0]</property>
+        <value>0</value>
+      </binding>
+      <binding>
+        <command>property-assign</command>
+        <property>sim/multiplay/generic/bool[1]</property>
+        <value>1</value>
+      </binding>
+      <binding>
+        <command>property-assign</command>
+        <property>sim/model/empty-wings</property>
+        <value>0</value>
+      </binding>
+      <binding>
+        <command>property-assign</command>
+        <property>sim/multiplay/generic/bool[20]</property>
+        <value>0</value>
+      </binding>
+      <binding>
+        <command>property-assign</command>
+        <property>sim/multiplay/generic/bool[21]</property>
+        <value>0</value>
+      </binding>
+      <binding>
+        <command>property-assign</command>
+        <property>sim/multiplay/generic/bool[22]</property>
+        <value>0</value>
+      </binding>
+      <binding>
+        <command>property-assign</command>
+        <property>sim/multiplay/generic/bool[23]</property>
+        <value>0</value>
+      </binding>
+      <binding>
+        <command>property-assign</command>
+        <property>sim/multiplay/generic/bool[24]</property>
+        <value>0</value>
+      </binding>
+      <binding>
+        <command>property-assign</command>
+        <property>sim/multiplay/generic/bool[25]</property>
+        <value>0</value>
+      </binding>
+      <binding>
+        <command>property-assign</command>
+        <property>sim/multiplay/generic/bool[26]</property>
+        <value>0</value>
+      </binding>
+      <binding>
+        <command>property-assign</command>
+        <property>sim/multiplay/generic/bool[27]</property>
+        <value>0</value>
+      </binding>
+      <binding>
+        <command>property-assign</command>
+        <property>sim/multiplay/generic/bool[28]</property>
+        <value>0</value>
+      </binding>
+      <binding>
+        <command>property-assign</command>
+        <property>sim/multiplay/generic/bool[29]</property>
+        <value>0</value>
+      </binding>
+      <binding>
+        <command>property-assign</command>
+        <property>sim/multiplay/generic/bool[30]</property>
+        <value>0</value>
+      </binding>
+    </radio>
+
+   </group>
+
+  <hrule/>
+
+  <group>
+    <layout>vbox</layout>
+    <padding>3</padding>
+    <text>
+      <label>Centerline Pylon</label>
+      <halign>center</halign>
+    </text>
+  </group>
+
+    <group>
+
+    <layout>hbox</layout>
+    <padding>4</padding>
+    <checkbox>
+      <halign>center</halign>
+      <label>SOM-J</label>
+      <property>sim/multiplay/generic/bool[26]</property>
+      <live>true</live>
+      <binding>
+        <command>property-assign</command>
+        <property>sim/multiplay/generic/bool[20]</property>
+        <value>1</value>
+      </binding>
+      <binding>
+        <command>property-toggle</command>
+        <property>sim/multiplay/generic/bool[26]</property>
+        <value>1</value>
+      </binding>
+      <binding>
+        <command>property-assign</command>
+        <property>sim/multiplay/generic/bool[0]</property>
+        <value>0</value>
+      </binding>
+      <binding>
+        <command>property-assign</command>
+        <property>sim/multiplay/generic/bool[1]</property>
+        <value>0</value>
+      </binding>
+      <binding>
+        <command>property-assign</command>
+        <property>sim/multiplay/generic/bool[28]</property>
+        <value>0</value>
+      </binding>
+      <binding>
+        <command>nasal</command>
+      </binding>
+      <binding>
+        <command>dialog-update</command>
+      </binding>
+    </checkbox>
+
+    <layout>hbox</layout>
+    <padding>4</padding>
+    <checkbox>
+      <halign>center</halign>
+      <label>GBU-12</label>
+      <property>sim/multiplay/generic/bool[28]</property>
+      <live>true</live>
+      <binding>
+        <command>property-assign</command>
+        <property>sim/multiplay/generic/bool[20]</property>
+        <value>1</value>
+      </binding>
+      <binding>
+        <command>property-toggle</command>
+        <property>sim/multiplay/generic/bool[28]</property>
+        <value>1</value>
+      </binding>
+      <binding>
+        <command>property-assign</command>
+        <property>sim/multiplay/generic/bool[0]</property>
+        <value>0</value>
+      </binding>
+      <binding>
+        <command>property-assign</command>
+        <property>sim/multiplay/generic/bool[1]</property>
+        <value>0</value>
+      </binding>
+      <binding>
+        <command>property-assign</command>
+        <property>sim/multiplay/generic/bool[26]</property>
+        <value>0</value>
+      </binding>
+      <binding>
+        <command>nasal</command>
+      </binding>
+      <binding>
+        <command>dialog-update</command>
+      </binding>
+    </checkbox>
+
+   </group>
+
+  <hrule/>
+
+  <group>
+    <layout>vbox</layout>
+    <padding>3</padding>
+    <text>
+      <label>Inner Wing Pylons</label>
+      <halign>center</halign>
+    </text>
+  </group>
+
+  <group>
+
+    <layout>hbox</layout>
+    <padding>4</padding>
+    <checkbox>
+      <halign>center</halign>
+      <label>SOM-J</label>
+      <property>sim/multiplay/generic/bool[27]</property>
+      <live>true</live>
+      <binding>
+        <command>property-toggle</command>
+        <property>sim/multiplay/generic/bool[21]</property>
+        <value>1</value>
+      </binding>
+      <binding>
+        <command>property-toggle</command>
+        <property>sim/multiplay/generic/bool[27]</property>
+        <value>1</value>
+      </binding>
+      <binding>
+        <command>property-assign</command>
+        <property>sim/multiplay/generic/bool[0]</property>
+        <value>0</value>
+      </binding>
+      <binding>
+        <command>property-assign</command>
+        <property>sim/multiplay/generic/bool[1]</property>
+        <value>0</value>
+      </binding>
+      <binding>
+        <command>property-assign</command>
+        <property>sim/multiplay/generic/bool[28]</property>
+        <value>0</value>
+      </binding>
+      <binding>
+        <command>nasal</command>
+      </binding>
+      <binding>
+        <command>dialog-update</command>
+      </binding>
+    </checkbox>
+
+    <layout>hbox</layout>
+    <padding>4</padding>
+    <checkbox>
+      <halign>center</halign>
+      <label>GBU-12</label>
+      <property>sim/multiplay/generic/bool[29]</property>
+      <live>true</live>
+      <binding>
+        <command>property-toggle</command>
+        <property>sim/multiplay/generic/bool[21]</property>
+        <value>1</value>
+      </binding>
+      <binding>
+        <command>property-assign</command>
+        <property>sim/multiplay/generic/bool[27]</property>
+        <value>0</value>
+      </binding>
+      <binding>
+        <command>property-toggle</command>
+        <property>sim/multiplay/generic/bool[29]</property>
+        <value>1</value>
+      </binding>
+      <binding>
+        <command>property-assign</command>
+        <property>sim/multiplay/generic/bool[0]</property>
+        <value>0</value>
+      </binding>
+      <binding>
+        <command>property-assign</command>
+        <property>sim/multiplay/generic/bool[1]</property>
+        <value>0</value>
+      </binding>
+      <binding>
+        <command>nasal</command>
+      </binding>
+      <binding>
+        <command>dialog-update</command>
+      </binding>
+    </checkbox>
+
+   </group>
+
+  <hrule/>
+
+  <group>
+    <layout>vbox</layout>
+    <padding>3</padding>
+    <text>
+      <label>External Wing Pylons</label>
+      <halign>center</halign>
+    </text>
+  </group>
+
+  <group>
+
+    <layout>hbox</layout>
+    <padding>4</padding>
+    <checkbox>
+      <halign>left</halign>
+      <label>GBU-54</label>
+      <property>sim/multiplay/generic/bool[30]</property>
+      <live>true</live>
+      <binding>
+        <command>property-toggle</command>
+        <property>sim/multiplay/generic/bool[30]</property>
+        <value>1</value>
+      </binding>
+      <binding>
+        <command>property-toggle</command>
+        <property>sim/multiplay/generic/bool[22]</property>
+        <value>1</value>
+      </binding>
+      <binding>
+        <command>property-toggle</command>
+        <property>sim/multiplay/generic/bool[23]</property>
+        <value>1</value>
+      </binding>
+      <binding>
+        <command>property-assign</command>
+        <property>sim/multiplay/generic/bool[0]</property>
+        <value>0</value>
+      </binding>
+      <binding>
+        <command>property-assign</command>
+        <property>sim/multiplay/generic/bool[1]</property>
+        <value>0</value>
+      </binding>
+      <binding>
+        <command>nasal</command>
+      </binding>
+      <binding>
+        <command>dialog-update</command>
+      </binding>
+    </checkbox>
+
+    <layout>hbox</layout>
+    <padding>4</padding>
+    <checkbox>
+      <halign>left</halign>
+      <label>Antidot 2-U Pod</label>
+      <property>sim/multiplay/generic/bool[25]</property>
+      <live>true</live>
+      <binding>
+        <command>property-assign</command>
+        <property>sim/multiplay/generic/bool[0]</property>
+        <value>0</value>
+      </binding>
+      <binding>
+        <command>property-assign</command>
+        <property>sim/multiplay/generic/bool[1]</property>
+        <value>0</value>
+      </binding>
+      <binding>
+        <command>property-toggle</command>
+        <property>sim/multiplay/generic/bool[24]</property>
+        <value>1</value>
+      </binding>
+      <binding>
+        <command>property-toggle</command>
+        <property>sim/multiplay/generic/bool[25]</property>
+        <value>1</value>
+      </binding>
+      <binding>
+        <command>nasal</command>
+      </binding>
+      <binding>
+        <command>dialog-update</command>
+      </binding>
+    </checkbox>
+
+    </group>
+
+  <hrule/>
+
+    <button>
+        <legend>RELOAD WEAPONS</legend>
+        <binding>
+          <command>nasal</command>
+          <script>
+          setprop("sim/ai/submodels/SOM-J-1-number", 1);
+          setprop("sim/multiplay/generic/int[12]", 0);
+
+          setprop("sim/ai/submodels/SOM-J-number", 2);
+          setprop("sim/multiplay/generic/int[13]", 0);
+          setprop("sim/multiplay/generic/int[14]", 0);
+
+          setprop("sim/ai/submodels/GBU-12-1-number", 1);
+          setprop("sim/multiplay/generic/int[15]", 0);
+
+          setprop("sim/ai/submodels/GBU-12-number", 2);
+          setprop("sim/multiplay/generic/int[16]", 0);
+          setprop("sim/multiplay/generic/int[17]", 0);
+
+          setprop("sim/ai/submodels/GBU-54-number", 4);
+          setprop("sim/multiplay/generic/int[18]", 0);
+          setprop("sim/multiplay/generic/int[19]", 0);
+          setprop("sim/multiplay/generic/int[20]", 0);
+          setprop("sim/multiplay/generic/int[21]", 0);
+
+          </script>
+        </binding>
+        <binding>
+          <command>nasal</command>
+          <script>
+          if (!getprop("gear/gear[0]/wow")) {
+            screen.log.write("This is only possible on ground.");
+            return;
+          }
+          if (getprop("gear/gear[0]/position-norm")) {
+            screen.log.write("Weapons Reloaded.");
+          }
+          </script>
+        </binding>
+      </button>
+
+</PropertyList>

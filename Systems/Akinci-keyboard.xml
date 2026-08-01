@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <keyboard>
+
+    <key n="100">
+      <name>d</name>
+      <desc>Door</desc>
+      <binding>
+        <condition>
+          <and>
+            <property>gear/gear[0]/wow</property>
+            <property>gear/gear[1]/wow</property>
+            <property>gear/gear[2]/wow</property>
+            <less-than>
+              <property>gear/gear[0]/rollspeed-ms</property>
+              <value>10</value>
+            </less-than>
+          </and>
+        </condition>
+        <command>nasal</command>
+        <script>doors.crew.toggle();</script>
+      </binding>
+    </key>
+
+    <key n="114">
+      <name>r</name>
+      <desc>FLIR OUT/IN</desc>
+      <binding>
+        <command>nasal</command>
+        <script>doors.flir.toggle();</script>
+      </binding>
+    </key>
+
+    <key n="110">
+      <name>n</name>
+      <desc>Release Centerline Weapons</desc>
+      <binding>
+        <command>nasal</command>
+        <script><![CDATA[
+
+# SOM-J CENTRAL PYLON
+  if ((getprop("/sim/multiplay/generic/bool[26]")) 
+ and !getprop("/sim/launching-SOMJ1")) {
+  var SOMJ1Count = getprop("sim/ai/submodels/SOM-J-1-number");
+  if (SOMJ1Count > 0 and SOMJ1Count <= 1) {
+    setprop("/sim/launching-SOMJ1", 1);
+
+    var mpIndex = 11 + SOMJ1Count;  # Se (11 + 1) = 12 allora "int[12]"
+    var propPath = "sim/multiplay/generic/int[" ~ mpIndex ~ "]";
+    setprop(propPath, 1);
+
+    settimer(func() { setprop(propPath, 0); }, 0.2);
+    settimer(func() {
+      setprop("sim/ai/submodels/SOM-J-1-number", SOMJ1Count - 1);
+      setprop("/sim/launching-SOMJ1", 0);
+    }, 0.3);
+  }
+}
+
+# GBU-12 CENTRAL PYLON
+  if ((getprop("/sim/multiplay/generic/bool[28]")) 
+ and !getprop("/sim/launching-GBU121")) {
+  var GBU121Count = getprop("sim/ai/submodels/GBU-12-1-number");
+  if (GBU121Count > 0 and GBU121Count <= 1) {
+    setprop("/sim/launching-GBU121", 1);
+
+    var mpIndex = 14 + GBU121Count;  # Se (14 + 1) = 15 allora "int[15]"
+    var propPath = "sim/multiplay/generic/int[" ~ mpIndex ~ "]";
+    setprop(propPath, 1);
+
+    settimer(func() { setprop(propPath, 0); }, 0.2);
+    settimer(func() {
+      setprop("sim/ai/submodels/GBU-12-1-number", GBU121Count - 1);
+      setprop("/sim/launching-GBU121", 0);
+    }, 0.3);
+  }
+}
+
+       ]]></script>
+     </binding>
+   </key>
+
+<key n="109">
+  <name>m</name>
+  <desc>Release Inner Wing Weapons</desc>
+  <binding>
+    <command>nasal</command>
+    <script><![CDATA[
+
+# SOM-J
+  if ((getprop("/sim/multiplay/generic/bool[27]")) 
+ and !getprop("/sim/launching-SOMJ")) {
+  var SOMJCount = getprop("sim/ai/submodels/SOM-J-number");
+  if (SOMJCount > 0 and SOMJCount <= 2) {
+    setprop("/sim/launching-SOMJ", 1);
+
+    var mpIndex = 12 + SOMJCount;  # Se (12 + 2) = 14 allora "int[14]" e se (12 + 1) = 13 allora "int[13]"
+    var propPath = "sim/multiplay/generic/int[" ~ mpIndex ~ "]";
+    setprop(propPath, 1);
+
+    settimer(func() { setprop(propPath, 0); }, 0.2);
+    settimer(func() {
+      setprop("sim/ai/submodels/SOM-J-number", SOMJCount - 1);
+      setprop("/sim/launching-SOMJ", 0);
+    }, 0.3);
+  }
+}
+
+# GBU-12
+  if ((getprop("/sim/multiplay/generic/bool[29]")) 
+ and !getprop("/sim/launching-GBU12")) {
+  var GBU12Count = getprop("sim/ai/submodels/GBU-12-number");
+  if (GBU12Count > 0 and GBU12Count <= 2) {
+    setprop("/sim/launching-GBU12", 1);
+
+    var mpIndex = 15 + GBU12Count;  # Se (15 + 2) = 17 allora "int[17]" e se (15 + 1) = 16 allora "int[16]"
+    var propPath = "sim/multiplay/generic/int[" ~ mpIndex ~ "]";
+    setprop(propPath, 1);
+
+    settimer(func() { setprop(propPath, 0); }, 0.2);
+    settimer(func() {
+      setprop("sim/ai/submodels/GBU-12-number", GBU12Count - 1);
+      setprop("/sim/launching-GBU12", 0);
+    }, 0.3);
+  }
+}
+
+    ]]></script>
+  </binding>
+</key>
+
+<key n="77">
+  <name>M</name>
+  <desc>Release Outer Wing Weapons</desc>
+  <binding>
+    <command>nasal</command>
+    <script><![CDATA[
+
+# GBU-54
+  if ((getprop("/sim/multiplay/generic/bool[30]")) 
+ and !getprop("/sim/launching-GBU54")) {
+  var GBU54Count = getprop("sim/ai/submodels/GBU-54-number");
+  if (GBU54Count > 0 and GBU54Count <= 4) {
+    setprop("/sim/launching-GBU54", 1);
+
+    var mpIndex = 17 + GBU54Count;  # Se (17 + 4) = 21 allora "int[21]" e se (17 + 1) = 18 allora "int[18]"
+    var propPath = "sim/multiplay/generic/int[" ~ mpIndex ~ "]";
+    setprop(propPath, 1);
+
+    settimer(func() { setprop(propPath, 0); }, 0.2);
+    settimer(func() {
+      setprop("sim/ai/submodels/GBU-54-number", GBU54Count - 1);
+      setprop("/sim/launching-GBU54", 0);
+    }, 0.3);
+  }
+}
+
+    ]]></script>
+  </binding>
+</key>
+
+    <key n="108">
+      <name>l</name>
+      <desc>Landing light</desc>
+      <binding>
+        <command>property-toggle</command>
+        <!-- <property>controls/lighting/landing-lights</property> -->
+        <property>sim/multiplay/generic/bool[16]</property>
+      </binding>
+    </key>
+
+    <key n="81">
+      <name>Q</name>
+      <desc>Reset view</desc>
+      <binding>
+        <command>nasal</command>
+        <script>
+          setprop("sim/current-view/field-of-view",      getprop("sim/current-view/config/default-field-of-view-deg"));
+          setprop("sim/current-view/heading-offset-deg", getprop("sim/current-view/config/heading-offset-deg"));
+          setprop("sim/current-view/pitch-offset-deg",   getprop("sim/current-view/config/pitch-offset-deg"));
+          setprop("sim/current-view/roll-offset-deg",    getprop("sim/current-view/config/roll-offset-deg"));
+        </script>
+      </binding>
+    </key>
+
+    <key n="125">
+      <name>}</name>
+      <desc>AutoStart/AutoStop</desc>
+      <binding>
+        <command>property-toggle</command>
+        <property>controls/electric/battery-switch</property>
+      </binding>
+      <binding>
+        <command>property-toggle</command>
+        <property>controls/electric/engine/generator</property>
+      </binding>
+      <binding>
+        <command>property-toggle</command>
+        <property>controls/lighting/instrument-lights</property>
+      </binding>
+      <binding>
+        <command>property-toggle</command>
+        <property>controls/lighting/nav-lights</property>
+      </binding>
+      <binding>
+        <command>property-toggle</command>
+        <property>controls/lighting/beacon</property>
+      </binding>
+      <binding>
+        <command>property-toggle</command>
+        <property>controls/lighting/strobe</property>
+      </binding>
+      <binding>
+        <command>property-toggle</command>
+        <property>controls/switches/starterkey-insert</property>
+      </binding>
+      <!-- Magnetos ON -->
+      <binding>
+        <condition>
+          <property>controls/switches/starterkey-insert</property>
+        </condition>
+        <command>property-assign</command>
+        <property>controls/engines/engine[0]/magnetos</property>
+        <value>3</value>
+      </binding>
+      <binding>
+        <condition>
+          <property>controls/switches/starterkey-insert</property>
+        </condition>
+        <command>property-assign</command>
+        <property>controls/engines/engine[1]/magnetos</property>
+        <value>3</value>
+      </binding>
+      <binding>
+        <condition>
+          <property>controls/switches/starterkey-insert</property>
+        </condition>
+        <command>property-assign</command>
+        <property>consumables/fuel/tank[0]/selected</property>
+        <value>true</value>
+      </binding>
+      <binding>
+        <condition>
+          <property>controls/switches/starterkey-insert</property>
+        </condition>
+        <command>property-assign</command>
+        <property>consumables/fuel/tank[1]/selected</property>
+        <value>true</value>
+      </binding>
+      <!-- Magnetos OFF -->
+      <binding>
+        <condition>
+          <not><property>controls/switches/starterkey-insert</property></not>
+        </condition>
+        <command>property-assign</command>
+        <property>controls/engines/engine[0]/magnetos</property>
+        <value>0</value>
+      </binding>
+      <binding>
+        <condition>
+          <not><property>controls/switches/starterkey-insert</property></not>
+        </condition>
+        <command>property-assign</command>
+        <property>controls/engines/engine[1]/magnetos</property>
+        <value>0</value>
+      </binding>
+      <binding>
+        <condition>
+          <not><property>controls/switches/starterkey-insert</property></not>
+        </condition>
+        <command>property-assign</command>
+        <property>consumables/fuel/tank[0]/selected</property>
+        <value>false</value>
+      </binding>
+      <binding>
+        <condition>
+          <not><property>controls/switches/starterkey-insert</property></not>
+        </condition>
+        <command>property-assign</command>
+        <property>consumables/fuel/tank[1]/selected</property>
+        <value>false</value>
+      </binding>
+      <!-- *********************************************** -->
+      <binding>
+        <command>nasal</command>
+        <script>engines.autostart();</script>
+      </binding>
+    </key>
+
+  </keyboard>
+
+</PropertyList>

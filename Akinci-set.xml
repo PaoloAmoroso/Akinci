@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList   include="Systems/Akinci-base.xml">
+
+  <sim>
+
+    <description>Baykar Bayraktar Akinci</description>
+    <author>AMOROSO Paolo</author>
+
+    <aircraft-version>0.1</aircraft-version>
+    <status>Alpha</status>
+    <minimum-fg-version>2018.2.0</minimum-fg-version>
+
+    <flight-model>yasim</flight-model>
+    <aero>Systems/Akinci-yasim</aero>
+
+    <rating>
+      <FDM      type="int"> 3 </FDM>
+      <systems  type="int"> 2 </systems>
+      <cockpit  type="int"> 0 </cockpit>
+      <model    type="int"> 4 </model>
+    </rating>
+
+    <previews>
+      <preview>
+        <type>exterior</type>
+        <splash type="bool">true</splash>
+        <path>Previews/Akinci-0.png</path>
+      </preview>
+      <preview>
+        <type>exterior</type>
+        <splash type="bool">true</splash>
+        <path>Previews/Akinci-1.png</path>
+      </preview>
+    </previews>
+
+    <tags>
+      <tag>Baykar</tag>
+      <tag>Bayraktar</tag>
+      <tag>Akinci</tag>
+      <tag>Drone</tag>
+      <tag>reconnaissance</tag>
+      <tag>patrol</tag>
+      <tag>military</tag>
+      <tag>2020s</tag>
+      <tag>retractable-gear</tag>
+      <tag>tricycle</tag>
+      <tag>turboprop</tag>
+      <tag>twin-engine</tag>
+      <tag>variable-pitch</tag>
+      <tag>compositor</tag>
+      <tag>HDR</tag>
+    </tags>
+
+  </sim>
+
+</PropertyList>

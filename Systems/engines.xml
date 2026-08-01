@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <engine              n="0">
+    <engine-num        type="int">0</engine-num>
+    <running           type="bool">false</running>
+    <rpm               type="float">0</rpm>
+    <n1                type="float">0</n1>
+    <n2                type="float">0</n2>
+    <egt-degC          type="float">0</egt-degC>
+    <fuel-pressure-psi type="float">0</fuel-pressure-psi>
+  </engine>
+
+  <engine              n="1">
+    <engine-num        type="int">1</engine-num>
+    <running           type="bool">false</running>
+    <rpm               type="float">0</rpm>
+    <n1                type="float">0</n1>
+    <n2                type="float">0</n2>
+    <egt-degC          type="float">0</egt-degC>
+    <fuel-pressure-psi type="float">0</fuel-pressure-psi>
+  </engine>
+
+</PropertyList>
